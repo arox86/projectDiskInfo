@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CAboutDlg">
+    <Position X="3.25" Y="1" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="CAboutDlg::__unnamed_enum_0002_1" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AboutDlg.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AACEEBFgAAAAAGFAEBAAgEAQAAAgACAAAAAAhABAIAA=</HashCode>
+      <FileName>AboutDlg.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CDiskInfoApp">
+    <Position X="14" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABQAAAAAAFIAACIABAIGAAAEAAAAQAQAADAFAAAAA=</HashCode>
+      <FileName>DiskInfo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CDiskInfoDlg">
+    <Position X="1.25" Y="2.75" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="CDiskInfoDlg::__unnamed_enum_0014_2" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DiskInfoDlg.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="CDiskInfoDlg::__unnamed_enum_0014_3" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DiskInfoDlg.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>+lH9dL1KOm//7v/D/fvvvT/T/e/b///B1/9y/+/9HX4=</HashCode>
+      <FileName>DiskInfoDlg.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CFontSelection">
+    <Position X="19.75" Y="1.75" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="CFontSelection::__unnamed_enum_0020_1" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FontSelection.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQBAAEAAAhAACAAABAAAAAAAAAAAABAAAAGAABAAAE=</HashCode>
+      <FileName>FontSelection.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CGraphDlg">
+    <Position X="22.25" Y="1.75" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="CGraphDlg::__unnamed_enum_0026_2" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GraphDlg.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>PoKgAQF0H+lGKGX43vf3EqRaoHtRdP4xgHv0G8t0zvE=</HashCode>
+      <FileName>GraphDlg.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CHealthDlg">
+    <Position X="16.25" Y="1.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="CHealthDlg::__unnamed_enum_0028_1" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>HealthDlg.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>GABgAAEEDAAAECIBEBAQCAHAAAAA5AABGAgAEPBgAIA=</HashCode>
+      <FileName>HealthDlg.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="COptionDlg">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="COptionDlg::__unnamed_enum_0032_1" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>OptionDlg.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAACAEAEIAAgEEAABAAAIAIAAJAAJh/AAAAAABgJAQ=</HashCode>
+      <FileName>OptionDlg.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="_SMART_ATTRIBUTE" Collapsed="true">
+    <Position X="8.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBACAAAAAAgAAAAAAAAAAAAAAAAAAECAAAAAAAAAAAA=</HashCode>
+      <FileName>NVMeInterpreter.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="SMART_ATTRIBUTE" Collapsed="true">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NVMeInterpreter.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="SMART_ATTRIBUTE_LIST" Collapsed="true">
+    <Position X="8.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NVMeInterpreter.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="__unnamed_enum_0014_1" Collapsed="true">
+    <Position X="1.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAIAAAAAAABABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DiskInfoDlg.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="__unnamed_enum_0026_1">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GraphDlg.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
