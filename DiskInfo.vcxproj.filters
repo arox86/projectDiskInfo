@@ -863,6 +863,9 @@
     <None Include=".gitattributes" />
     <None Include=".gitignore" />
     <None Include="ClassDiagram.cd" />
+    <None Include="RuleSet.ruleset">
+      <Filter>Header Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="DiskInfo.rc">

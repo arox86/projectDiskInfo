@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical">
   <Class Name="CAboutDlg">
-    <Position X="3.25" Y="1" Width="1.5" />
+    <Position X="4.5" Y="2.5" Width="2.25" />
     <NestedTypes>
       <Enum Name="CAboutDlg::__unnamed_enum_0002_1" Collapsed="true">
         <TypeIdentifier>
@@ -14,15 +14,15 @@
       <FileName>AboutDlg.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CDiskInfoApp">
-    <Position X="14" Y="1.5" Width="1.5" />
+  <Class Name="CDiskInfoApp" Collapsed="true">
+    <Position X="37.75" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAABQAAAAAAFIAACIABAIGAAAEAAAAQAQAADAFAAAAA=</HashCode>
       <FileName>DiskInfo.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CDiskInfoDlg">
-    <Position X="1.25" Y="2.75" Width="1.5" />
+    <Position X="10.25" Y="4" Width="3.25" />
     <NestedTypes>
       <Enum Name="CDiskInfoDlg::__unnamed_enum_0014_2" Collapsed="true">
         <TypeIdentifier>
@@ -41,7 +41,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="CFontSelection">
-    <Position X="19.75" Y="1.75" Width="1.5" />
+    <Position X="7.5" Y="2.5" Width="2" />
     <NestedTypes>
       <Enum Name="CFontSelection::__unnamed_enum_0020_1" Collapsed="true">
         <TypeIdentifier>
@@ -55,7 +55,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="CGraphDlg">
-    <Position X="22.25" Y="1.75" Width="1.5" />
+    <Position X="3.25" Y="16" Width="2" />
     <NestedTypes>
       <Enum Name="CGraphDlg::__unnamed_enum_0026_2" Collapsed="true">
         <TypeIdentifier>
@@ -69,7 +69,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="CHealthDlg">
-    <Position X="16.25" Y="1.5" Width="1.5" />
+    <Position X="1.5" Y="2.5" Width="2.25" />
     <NestedTypes>
       <Enum Name="CHealthDlg::__unnamed_enum_0028_1" Collapsed="true">
         <TypeIdentifier>
@@ -83,7 +83,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="COptionDlg">
-    <Position X="11" Y="1.5" Width="1.5" />
+    <Position X="0.75" Y="14.5" Width="1.75" />
     <NestedTypes>
       <Enum Name="COptionDlg::__unnamed_enum_0032_1" Collapsed="true">
         <TypeIdentifier>
@@ -96,39 +96,952 @@
       <FileName>OptionDlg.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Struct Name="_SMART_ATTRIBUTE" Collapsed="true">
-    <Position X="8.75" Y="1.75" Width="1.5" />
+  <Class Name="CTemperatureDlg" Collapsed="true">
+    <Position X="16.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgAAEMMAAAACIBABAAAABAAAEgAABBAAAAECBgAAA=</HashCode>
+      <FileName>TemperatureDlg.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSoundSettingDlg" Collapsed="true">
+    <Position X="14.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQQkAEAAEACAAABAQQAAEAAAAAABAABIAADBAAAA=</HashCode>
+      <FileName>SoundSettingDlg.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSettingDlg" Collapsed="true">
+    <Position X="18.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IoBkBQEEQEwAAiADAJCAEBBAQIABAigxBAABAJhiWRA=</HashCode>
+      <FileName>SettingDlg.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CAtaSmart" Collapsed="true">
+    <Position X="34.25" Y="1" Width="1.5" />
+    <NestedTypes>
+      <Struct Name="CAtaSmart::NVME_IDENTIFY_DEVICE" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Typedef Name="CAtaSmart::CSMI_SAS_RAID_DEVICE_ID" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Struct Name="CAtaSmart::_CSMI_SAS_RAID_INFO_BUFFER" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="CAtaSmart::_CSMI_SAS_RAID_SET_ADDITIONAL_DATA" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Typedef Name="CAtaSmart::PNVME_CDW0" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Struct Name="CAtaSmart::BIN_IDENTIFY_DEVICE" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Typedef Name="CAtaSmart::PCSMI_SAS_DRIVER_INFO_BUFFER" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Struct Name="CAtaSmart::_CSMI_SAS_STP_PASSTHRU_STATUS" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="CAtaSmart::_CSMI_SAS_IDENTIFY" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="CAtaSmart::_SMART_THRESHOLD" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Typedef Name="CAtaSmart::PCSMI_SAS_RAID_CONFIG" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Struct Name="CAtaSmart::__unnamed_struct_0004_1" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Typedef Name="CAtaSmart::INTEL_NVME_PASS_THROUGH" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::IDENTIFY_DEVICE_OUTDATA" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Struct Name="CAtaSmart::_CSMI_SAS_RAID_DRIVES" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Typedef Name="CAtaSmart::CSMI_SAS_RAID_INFO" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Struct Name="CAtaSmart::ATA_IDENTIFY_DEVICE" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="CAtaSmart::SMART_STATUS" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Typedef Name="CAtaSmart::PSMART_READ_DATA_OUTDATA" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::PINTEL_NVME_PAYLOAD" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::PCSMI_SAS_STP_PASSTHRU_STATUS" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Struct Name="CAtaSmart::_CSMI_SAS_DRIVER_INFO_BUFFER" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Typedef Name="CAtaSmart::PCSMI_SAS_RAID_CONFIG_BUFFER" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::PCSMI_SAS_STP_PASSTHRU_BUFFER" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::ATA_PASS_THROUGH_EX" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Struct Name="CAtaSmart::_SRB_IO_COMMAND" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="CAtaSmart::_CSMI_SAS_RAID_DEVICE_ID" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Typedef Name="CAtaSmart::SRB_IO_COMMAND" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::PCSMI_SAS_DRIVER_INFO" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::PCSMI_SAS_RAID_INFO" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Enum Name="CAtaSmart::HOST_READS_WRITES_UNIT" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Typedef Name="CAtaSmart::CSMI_SAS_RAID_INFO_BUFFER" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::PSCSI_ADDRESS" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::PCMD_IDE_PATH_THROUGH" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Struct Name="CAtaSmart::_CSMI_SAS_STP_PASSTHRU" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Typedef Name="CAtaSmart::CSMI_SAS_PHY_INFO" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::NVME_CDW0" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::SCSI_ADDRESS" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Struct Name="CAtaSmart::_CSMI_SAS_DRIVER_INFO" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="CAtaSmart::_CSMI_SAS_PHY_INFO_BUFFER" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Typedef Name="CAtaSmart::SRB_IO_CONTROL" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::ATA_PASS_THROUGH_EX_WITH_BUFFERS" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Struct Name="CAtaSmart::NVME_PASS_THROUGH_IOCTL" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Typedef Name="CAtaSmart::CSMI_SAS_PHY_ENTITY" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::CSMI_SAS_DRIVER_INFO_BUFFER" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Struct Name="CAtaSmart::_INTEL_NVME_PASS_THROUGH" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="CAtaSmart::DISK_POSITION" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Typedef Name="CAtaSmart::PCSMI_SAS_STP_PASSTHRU" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Enum Name="CAtaSmart::IO_CONTROL_CODE" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="CAtaSmart::_CMD_IDE_PATH_THROUGH" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Typedef Name="CAtaSmart::CSMI_SAS_RAID_DRIVES" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::NVME_IDENTIFY_CDW10" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Struct Name="CAtaSmart::_CSMI_SAS_STP_PASSTHRU_BUFFER" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="CAtaSmart::_ATA_PASS_THROUGH_EX" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Typedef Name="CAtaSmart::PCSMI_SAS_RAID_SET_ADDITIONAL_DATA" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Struct Name="CAtaSmart::_INTEL_NVME_PAYLOAD" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Typedef Name="CAtaSmart::PCSMI_SAS_RAID_INFO_BUFFER" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Struct Name="CAtaSmart::EXTERNAL_DISK_INFO" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Typedef Name="CAtaSmart::PINTEL_NVME_PASS_THROUGH" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Enum Name="CAtaSmart::INTERFACE_TYPE" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Typedef Name="CAtaSmart::PCSMI_SAS_IDENTIFY" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::SMART_THRESHOLD" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::INTEL_NVME_PAYLOAD" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::CSMI_SAS_RAID_CONFIG_BUFFER" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::CSMI_SAS_STP_PASSTHRU_BUFFER" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Struct Name="CAtaSmart::_SRB_IO_CONTROL" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Typedef Name="CAtaSmart::SilIdentDev" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::NVME_GET_LOG_PAGE_CDW10_V13" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::PIDENTIFY_DEVICE_OUTDATA" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Struct Name="CAtaSmart::__unnamed_struct_0004_17" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Typedef Name="CAtaSmart::PCSMI_SAS_RAID_DRIVES" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Struct Name="CAtaSmart::_IDENTIFY_DEVICE_OUTDATA" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="CAtaSmart::COMMAND_TYPE" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="CAtaSmart::VENDOR_ID" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="CAtaSmart::DISK_STATUS" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Typedef Name="CAtaSmart::PNVME_CMD" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::PCMD_ATA_PASS_THROUGH_EX" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::CSMI_SAS_PHY_INFO_BUFFER" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::CSMI_SAS_RAID_CONFIG" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Struct Name="CAtaSmart::_CSMI_SAS_RAID_INFO" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Typedef Name="CAtaSmart::CMD_IDE_PATH_THROUGH" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::CSMI_SAS_STP_PASSTHRU_STATUS" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::NVME_CMD" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::CSMI_SAS_STP_PASSTHRU" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::PCSMI_SAS_PHY_INFO_BUFFER" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::PCSMI_SAS_PHY_INFO" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Struct Name="CAtaSmart::_SCSI_ADDRESS" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="CAtaSmart::ATA_SMART_INFO" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Typedef Name="CAtaSmart::CSMI_SAS_RAID_SET_ADDITIONAL_DATA" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Struct Name="CAtaSmart::_CSMI_SAS_PHY_INFO" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="CAtaSmart::POWER_ON_HOURS_UNIT" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="CAtaSmart::_CSMI_SAS_RAID_CONFIG" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Typedef Name="CAtaSmart::NVME_GET_LOG_PAGE_CDW10" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::PNVME_GET_LOG_PAGE_CDW10" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Struct Name="CAtaSmart::_CSMI_SAS_RAID_CONFIG_BUFFER" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="CAtaSmart::__unnamed_struct_0004_2" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Typedef Name="CAtaSmart::PNVME_IDENTIFY_CDW10" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Enum Name="CAtaSmart::CSMI_TYPE" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Typedef Name="CAtaSmart::PCSMI_SAS_RAID_DEVICE_ID" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Enum Name="CAtaSmart::SMART_WMI_TYPE" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="CAtaSmart::TRANSFER_MODE" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="CAtaSmart::_SMART_READ_DATA_OUTDATA" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Typedef Name="CAtaSmart::PNVME_GET_LOG_PAGE_CDW10_V13" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::SMART_READ_DATA_OUTDATA" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::PCSMI_SAS_PHY_ENTITY" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::CSMI_SAS_DRIVER_INFO" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="CAtaSmart::CSMI_SAS_IDENTIFY" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Struct Name="CAtaSmart::_CSMI_SAS_PHY_ENTITY" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AtaSmart.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>9CYAWgFVpwolyeNfEhs42kCZlACIZIMq5mFbvUlWPJM=</HashCode>
+      <FileName>AtaSmart.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CButtonCx" Collapsed="true">
+    <Position X="36" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASILBAfJKhAIACiEBEII0CwyAJECCgECAIQIODJAEAA=</HashCode>
+      <FileName>ButtonCx.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CComboBoxCx">
+    <Position X="6.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAIAAAAIAAAAAAAAAAAAAAAAAAAAQAAAAAAAI=</HashCode>
+      <FileName>ComboBoxCx.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CDHtmlDialogEx" Collapsed="true">
+    <Position X="2.25" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAACNEEASIANhooNAQBICBKECFAEAREgAggBAAAiA=</HashCode>
+      <FileName>DHtmlDialogEx.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CDHtmlMainDialog" Collapsed="true">
+    <Position X="3.5" Y="14.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>CACAUSMAAKCBAARFAAAAIACRIEoIAAAAABhDAAAAACA=</HashCode>
+      <FileName>DHtmlMainDialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CDialogCx" Collapsed="true">
+    <Position X="10.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAYACMgECCAIKkooFqYJAiBKEiEAEABAgAgABoAAhI=</HashCode>
+      <FileName>DialogCx.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CDnpService" Collapsed="true">
+    <Position X="34.25" Y="2" Width="1.5" />
+    <NestedTypes>
+      <Class Name="CDnpService::CServiceThread" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DnpService.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAQAEgAAAAAAAAIAAAAA=</HashCode>
+      <FileName>DnpService.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CFontComboBox">
+    <Position X="6.75" Y="12.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAEAAEEAAAAAAAAABACAIAAAAAAAAAA=</HashCode>
+      <FileName>FontComboBox.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CListCtrlEx" Collapsed="true">
+    <Position X="36" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iACAAAEAJAAAAAAAAAIAAAAYEAAAAJAAUA0gAECAAAI=</HashCode>
+      <FileName>ListCtrlEx.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMainDialog" Collapsed="true">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CBCAUSMAgICBAARFAAAAIACRIEoIAAAAABhCAABAACA=</HashCode>
+      <FileName>MainDialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CStaticCx" Collapsed="true">
+    <Position X="37.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASILBAfJKhAIACiEBEII0CwygJECCgECAIQMOBJAAAA=</HashCode>
+      <FileName>StaticCX.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="_SMART_ATTRIBUTE">
+    <Position X="22.75" Y="7.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>QBACAAAAAAgAAAAAAAAAAAAAAAAAAECAAAAAAAAAAAA=</HashCode>
       <FileName>NVMeInterpreter.h</FileName>
     </TypeIdentifier>
   </Struct>
+  <Struct Name="_SlotSpeed">
+    <Position X="30.75" Y="19.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>SlotSpeedGetter.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_SlotMaxCurrSpeed">
+    <Position X="31" Y="15.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SlotSpeedGetter.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_OSSlotSpeed">
+    <Position X="26.75" Y="30.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>SlotSpeedGetter.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_OSSlotMaxCurrSpeed">
+    <Position X="22" Y="30.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SlotSpeedGetter.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_VOLUME_DISK_EXTENTS_LX">
+    <Position X="21" Y="18.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AtaSmart.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_SCSI_PASS_THROUGH">
+    <Position X="16" Y="18.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>gAgEQAAAgAAAAAAAAAAAIAJAAAAAQAAAQAAAAAABEEA=</HashCode>
+      <FileName>SPTIUtil.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_SCSI_PASS_THROUGH_WITH_BUFFERS" Collapsed="true">
+    <Position X="16.25" Y="13" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAQAAAAAAAAgAAAAIA=</HashCode>
+      <FileName>SPTIUtil.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_SCSI_PASS_THROUGH_WITH_BUFFERS24">
+    <Position X="16.25" Y="5.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAgAAAAIA=</HashCode>
+      <FileName>SPTIUtil.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="StorageQuery::__unnamed_struct_0040_3">
+    <Position X="28" Y="6.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StorageQuery.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="StorageQuery::__unnamed_struct_0040_5">
+    <Position X="26" Y="19.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAICAAoAAAAAAAAAAIAAAAAAAAAABAAgAAQAAAA=</HashCode>
+      <FileName>StorageQuery.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="StorageQuery::__unnamed_struct_0040_7">
+    <Position X="23" Y="12.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAgAAAAAAAAAQAA=</HashCode>
+      <FileName>StorageQuery.h</FileName>
+    </TypeIdentifier>
+  </Struct>
   <Typedef Name="SMART_ATTRIBUTE" Collapsed="true">
-    <Position X="8.75" Y="3.5" Width="1.5" />
+    <Position X="22.25" Y="5.25" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>NVMeInterpreter.h</FileName>
     </TypeIdentifier>
   </Typedef>
   <Typedef Name="SMART_ATTRIBUTE_LIST" Collapsed="true">
-    <Position X="8.75" Y="5.5" Width="1.5" />
+    <Position X="21.5" Y="3.25" Width="4.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>NVMeInterpreter.h</FileName>
     </TypeIdentifier>
   </Typedef>
+  <Typedef Name="PCIeSpecification" Collapsed="true">
+    <Position X="30.25" Y="26.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SlotSpeedGetter.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="PCIeDataWidth" Collapsed="true">
+    <Position X="30.25" Y="21.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SlotSpeedGetter.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="SlotSpeed" Collapsed="true">
+    <Position X="30.75" Y="17.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SlotSpeedGetter.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="SlotMaxCurrSpeed" Collapsed="true">
+    <Position X="30.25" Y="13.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SlotSpeedGetter.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="OSSlotSpeed" Collapsed="true">
+    <Position X="26.5" Y="32.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SlotSpeedGetter.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="OSSlotMaxCurrSpeed" Collapsed="true">
+    <Position X="21.25" Y="32.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SlotSpeedGetter.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="VOLUME_DISK_EXTENTS_LX" Collapsed="true">
+    <Position X="19.75" Y="20.75" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AtaSmart.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="PVOLUME_DISK_EXTENTS_LX" Collapsed="true">
+    <Position X="19.5" Y="16.75" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AtaSmart.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="SCSI_PASS_THROUGH" Collapsed="true">
+    <Position X="14.75" Y="23.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPTIUtil.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="PSCSI_PASS_THROUGH" Collapsed="true">
+    <Position X="14.75" Y="17.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPTIUtil.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="SCSI_PASS_THROUGH_WITH_BUFFERS" Collapsed="true">
+    <Position X="14.5" Y="15" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPTIUtil.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="PSCSI_PASS_THROUGH_WITH_BUFFERS" Collapsed="true">
+    <Position X="14.25" Y="11" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPTIUtil.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="SCSI_PASS_THROUGH_WITH_BUFFERS24" Collapsed="true">
+    <Position X="15" Y="9.75" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPTIUtil.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="PSCSI_PASS_THROUGH_WITH_BUFFERS24" Collapsed="true">
+    <Position X="14.75" Y="7.75" Width="5.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SPTIUtil.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="StorageQuery::TStoragePropertyId" Collapsed="true">
+    <Position X="16" Y="28.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StorageQuery.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="StorageQuery::TStorageQueryType" Collapsed="true">
+    <Position X="26.75" Y="12" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StorageQuery.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="StorageQuery::TStoragePropertyQuery" Collapsed="true">
+    <Position X="26.75" Y="4.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StorageQuery.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="StorageQuery::TStroageProtocolType" Collapsed="true">
+    <Position X="24.75" Y="27.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StorageQuery.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="StorageQuery::TStorageProtocolSpecificData" Collapsed="true">
+    <Position X="24.75" Y="18" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StorageQuery.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="StorageQuery::TStorageProtocolNVMeDataType" Collapsed="true">
+    <Position X="19.25" Y="25.75" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StorageQuery.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="StorageQuery::TStorageQueryWithBuffer" Collapsed="true">
+    <Position X="21.5" Y="10.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StorageQuery.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
   <Enum Name="__unnamed_enum_0014_1" Collapsed="true">
-    <Position X="1.25" Y="4" Width="1.5" />
+    <Position X="34.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAAAAIAAAAAAABABAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>DiskInfoDlg.h</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="__unnamed_enum_0026_1">
-    <Position X="5.5" Y="1.75" Width="1.5" />
+  <Enum Name="__unnamed_enum_0026_1" Collapsed="true">
+    <Position X="36" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GraphDlg.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="_PCIeSpecification">
+    <Position X="30.75" Y="28.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAIAAAAAAAEAAAAAA=</HashCode>
+      <FileName>SlotSpeedGetter.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="_PCIeDataWidth">
+    <Position X="30.75" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAQAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>SlotSpeedGetter.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="StorageQuery::__unnamed_enum_0040_1">
+    <Position X="16.25" Y="30.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AQACACKIBAAAQAKAhAQAAAABAAEhAACAAABAABABYhA=</HashCode>
+      <FileName>StorageQuery.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="StorageQuery::__unnamed_enum_0040_2" Collapsed="true">
+    <Position X="28" Y="10" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAQACAAA=</HashCode>
+      <FileName>StorageQuery.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="StorageQuery::__unnamed_enum_0040_4">
+    <Position X="26" Y="24.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAEAAAAQAABAAAACQAAEAAAAA=</HashCode>
+      <FileName>StorageQuery.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="StorageQuery::__unnamed_enum_0040_6">
+    <Position X="21" Y="23.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BAAIAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>StorageQuery.h</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />
