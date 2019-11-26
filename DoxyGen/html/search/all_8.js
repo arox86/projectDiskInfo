@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['hardwareresetresult_924',['HardwareResetResult',['../struct_c_ata_smart_1_1_a_t_a___i_d_e_n_t_i_f_y___d_e_v_i_c_e.html#a0953164f57bf3c5c4da594d37e2be29e',1,'CAtaSmart::ATA_IDENTIFY_DEVICE']]],
+  ['hdd_5fgeneral_925',['HDD_GENERAL',['../class_c_ata_smart.html#a1b94607cf73db97869cb7d4ca7ed01a4a6fec1e5251c73b3dc4ed11a6455026e8',1,'CAtaSmart']]],
+  ['hdd_5fssd_5fvendor_5fseagate_926',['HDD_SSD_VENDOR_SEAGATE',['../class_c_ata_smart.html#a1b94607cf73db97869cb7d4ca7ed01a4ae55e89989c187c3c7a7b6462a39aa14c',1,'CAtaSmart']]],
+  ['hdd_5fssd_5fvendor_5ftoshiba_927',['HDD_SSD_VENDOR_TOSHIBA',['../class_c_ata_smart.html#a1b94607cf73db97869cb7d4ca7ed01a4abf26f1b6452549b6f85fa753c489d889',1,'CAtaSmart']]],
+  ['hdd_5fvendor_5fwestern_5fdigital_928',['HDD_VENDOR_WESTERN_DIGITAL',['../class_c_ata_smart.html#a1b94607cf73db97869cb7d4ca7ed01a4a05b295e0acabb2c660b83a189df2b88d',1,'CAtaSmart']]],
+  ['head_929',['Head',['../struct_c_ata_smart_1_1_a_t_a___s_m_a_r_t___i_n_f_o.html#a07042ac9c6be2152d0d4aa9a13867161',1,'CAtaSmart::ATA_SMART_INFO']]],
+  ['headerlength_930',['HeaderLength',['../struct_c_ata_smart_1_1___s_r_b___i_o___c_o_n_t_r_o_l.html#afc65f1e34891e597edec49b4e2ec02a8',1,'CAtaSmart::_SRB_IO_CONTROL']]],
+  ['healthdlg_2ecpp_931',['HealthDlg.cpp',['../_health_dlg_8cpp.html',1,'']]],
+  ['healthdlg_2eh_932',['HealthDlg.h',['../_health_dlg_8h.html',1,'']]],
+  ['hidecontrol_933',['HideControl',['../class_c_d_html_dialog_ex.html#a8009bd111e8171613d87ab0d5aa7d4a6',1,'CDHtmlDialogEx']]],
+  ['host_5freads_5fwrites_5f32mb_934',['HOST_READS_WRITES_32MB',['../class_c_ata_smart.html#a225a507734e4fb41d799fffe3e8211a0adcbaf2100a9825647341faa589f47587',1,'CAtaSmart']]],
+  ['host_5freads_5fwrites_5f512b_935',['HOST_READS_WRITES_512B',['../class_c_ata_smart.html#a225a507734e4fb41d799fffe3e8211a0a0c55b0f4dd7a401bc09914b4a8725ca2',1,'CAtaSmart']]],
+  ['host_5freads_5fwrites_5fgb_936',['HOST_READS_WRITES_GB',['../class_c_ata_smart.html#a225a507734e4fb41d799fffe3e8211a0a3b493080dd0dde12d0495dbeafe12050',1,'CAtaSmart']]],
+  ['host_5freads_5fwrites_5funit_937',['HOST_READS_WRITES_UNIT',['../class_c_ata_smart.html#a225a507734e4fb41d799fffe3e8211a0',1,'CAtaSmart']]],
+  ['host_5freads_5fwrites_5funknown_938',['HOST_READS_WRITES_UNKNOWN',['../class_c_ata_smart.html#a225a507734e4fb41d799fffe3e8211a0aa619706efcedfa59f61be8e1909cfef9',1,'CAtaSmart']]],
+  ['hostreads_939',['HostReads',['../struct_c_ata_smart_1_1_a_t_a___s_m_a_r_t___i_n_f_o.html#a6e48cc949610dd0d54c82b10e842bbc9',1,'CAtaSmart::ATA_SMART_INFO']]],
+  ['hostreadswritesunit_940',['HostReadsWritesUnit',['../struct_c_ata_smart_1_1_a_t_a___s_m_a_r_t___i_n_f_o.html#ae41531cc8e5ea2c609b42c6ce4219402',1,'CAtaSmart::ATA_SMART_INFO']]],
+  ['hostwrites_941',['HostWrites',['../struct_c_ata_smart_1_1_a_t_a___s_m_a_r_t___i_n_f_o.html#a7ccae5243d5a042f253da76cd40d4fca',1,'CAtaSmart::ATA_SMART_INFO']]]
+];

@@ -1,0 +1,9 @@
+<map id="CDiskInfoDlg::OnFontSetting" name="CDiskInfoDlg::OnFontSetting">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,193,83"/>
+<area shape="rect" id="node2" href="$class_c_font_selection.html#ae8f607de59f570559215e96153c7bfc1" title=" " alt="" coords="241,5,436,32"/>
+<area shape="rect" id="node3" href="$class_c_font_selection.html#a9fd9aefc712686076e3e3cc5170c075c" title=" " alt="" coords="241,56,436,83"/>
+<area shape="rect" id="node4" href="$class_c_disk_info_dlg.html#ab24ac2685d66a0734620e9944fbbc3f4" title=" " alt="" coords="243,107,434,133"/>
+<area shape="rect" id="node5" href="$class_c_list_ctrl_ex.html#acb87d2cae9dcdc18a8239a3fe82a8a49" title=" " alt="" coords="484,56,643,83"/>
+<area shape="rect" id="node6" href="$class_c_static_cx.html#a0e06a292de346ae29cecbd58f923ee85" title=" " alt="" coords="488,107,639,133"/>
+<area shape="rect" id="node7" href="$class_c_button_cx.html#aa26750a9a24f6fb179844b5449883923" title=" " alt="" coords="486,157,641,184"/>
+</map>

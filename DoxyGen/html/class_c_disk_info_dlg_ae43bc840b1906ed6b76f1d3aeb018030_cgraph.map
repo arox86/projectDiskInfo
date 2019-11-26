@@ -1,0 +1,13 @@
+<map id="CDiskInfoDlg::AlarmHealthStatus" name="CDiskInfoDlg::AlarmHealthStatus">
+<area shape="rect" id="node1" title=" " alt="" coords="5,150,180,191"/>
+<area shape="rect" id="node2" href="$class_c_disk_info_dlg.html#ae481499f5b9a685110d8e6a7c085b580" title=" " alt="" coords="228,5,431,32"/>
+<area shape="rect" id="node3" href="$class_c_disk_info_dlg.html#a8733e45a60e9606335720734509c6b93" title=" " alt="" coords="239,56,419,83"/>
+<area shape="rect" id="node5" href="$class_c_disk_info_dlg.html#aea361347997026dd5092ae17c320b165" title=" " alt="" coords="245,107,413,133"/>
+<area shape="rect" id="node8" href="$class_c_disk_info_dlg.html#a4956f0e7d727988de0a0d40b5da28886" title=" " alt="" coords="235,157,424,184"/>
+<area shape="rect" id="node9" href="$class_c_dialog_cx.html#af28031ce28cca29e14826b1c57b9a631" title=" " alt="" coords="479,208,593,235"/>
+<area shape="rect" id="node10" href="$class_c_disk_info_dlg.html#af5a5508f104b8cb7d2d866c7028d5109" title=" " alt="" coords="250,259,409,285"/>
+<area shape="rect" id="node11" href="$class_c_main_dialog.html#a5254c92ded84a5f99cc29cf95fae2b31" title=" " alt="" coords="240,309,419,336"/>
+<area shape="rect" id="node4" href="$_event_log_8cpp.html#a66865e804313f6f2fdce585b28bd3571" title=" " alt="" coords="483,56,589,83"/>
+<area shape="rect" id="node6" href="$_disk_info_dlg_8cpp.html#aa381cf47285d3bac174b58e7751c8bf3" title=" " alt="" coords="485,107,587,133"/>
+<area shape="rect" id="node7" href="$_get_file_version_8cpp.html#a9d118596148bfdd1fa67352e8b58ce0e" title=" " alt="" coords="495,157,577,184"/>
+</map>

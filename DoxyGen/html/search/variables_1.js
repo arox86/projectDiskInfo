@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['a_4395',['A',['../union_c_ata_smart_1_1_i_d_e_n_t_i_f_y___d_e_v_i_c_e.html#a92340a08786e1b3bbed1f8910a3f3440',1,'CAtaSmart::IDENTIFY_DEVICE']]],
+  ['acoustricmanagement_4396',['AcoustricManagement',['../struct_c_ata_smart_1_1_a_t_a___i_d_e_n_t_i_f_y___d_e_v_i_c_e.html#afb79f10ea0c22278bfdeb73cedbb5c8c',1,'CAtaSmart::ATA_IDENTIFY_DEVICE']]],
+  ['additionalproductidentifier_4397',['AdditionalProductIdentifier',['../struct_c_ata_smart_1_1_a_t_a___i_d_e_n_t_i_f_y___d_e_v_i_c_e.html#aab7f724a9102ba48fdcf24cffcd64c29',1,'CAtaSmart::ATA_IDENTIFY_DEVICE']]],
+  ['alarm_5ftemperature_5fperiod_4398',['ALARM_TEMPERATURE_PERIOD',['../class_c_disk_info_dlg.html#ae8f3735839e31645a517468a34fa3f3d',1,'CDiskInfoDlg']]],
+  ['alarmhealthstatus_4399',['AlarmHealthStatus',['../struct_c_ata_smart_1_1_a_t_a___s_m_a_r_t___i_n_f_o.html#a1cacf0005259defabe2e0f16c1f1c814',1,'CAtaSmart::ATA_SMART_INFO']]],
+  ['alarmtemperature_4400',['AlarmTemperature',['../struct_c_ata_smart_1_1_a_t_a___s_m_a_r_t___i_n_f_o.html#ab70cf0af356ab367046c79fe7445b21b',1,'CAtaSmart::ATA_SMART_INFO']]],
+  ['alignmentoflogicalblocks_4401',['AlignmentOfLogicalBlocks',['../struct_c_ata_smart_1_1_a_t_a___i_d_e_n_t_i_f_y___d_e_v_i_c_e.html#a1c9c443fb701496bf85e9852b54332d8',1,'CAtaSmart::ATA_IDENTIFY_DEVICE']]],
+  ['apt_4402',['Apt',['../struct_c_ata_smart_1_1_a_t_a___p_a_s_s___t_h_r_o_u_g_h___e_x___w_i_t_h___b_u_f_f_e_r_s.html#a2bf5bb3c3cd17ee941767882372db320',1,'CAtaSmart::ATA_PASS_THROUGH_EX_WITH_BUFFERS']]],
+  ['asdword_4403',['AsDWord',['../union_c_ata_smart_1_1_n_v_m_e___c_d_w0.html#aeb2b07118720157d69a1e569ddf4fb24',1,'CAtaSmart::NVME_CDW0::AsDWord()'],['../union_c_ata_smart_1_1_n_v_m_e___i_d_e_n_t_i_f_y___c_d_w10.html#a5874cc74fac5c031eb488a03d2b2519a',1,'CAtaSmart::NVME_IDENTIFY_CDW10::AsDWord()'],['../union_c_ata_smart_1_1_n_v_m_e___g_e_t___l_o_g___p_a_g_e___c_d_w10.html#afa19bb5493ee6efc85f897c2d1eb8563',1,'CAtaSmart::NVME_GET_LOG_PAGE_CDW10::AsDWord()'],['../union_c_ata_smart_1_1_n_v_m_e___g_e_t___l_o_g___p_a_g_e___c_d_w10___v13.html#a8d6f29055c26694d2b0ec7b7661485e9',1,'CAtaSmart::NVME_GET_LOG_PAGE_CDW10_V13::AsDWord()']]],
+  ['ata_5fflags_5f48bit_5fcommand_4404',['ATA_FLAGS_48BIT_COMMAND',['../class_c_ata_smart.html#ae908c68f58a782b9ca1ea3ae2ad195fe',1,'CAtaSmart']]],
+  ['ata_5fflags_5fdata_5fin_4405',['ATA_FLAGS_DATA_IN',['../class_c_ata_smart.html#aac84d0f60e8edb4881655996f558820f',1,'CAtaSmart']]],
+  ['ata_5fflags_5fdata_5fout_4406',['ATA_FLAGS_DATA_OUT',['../class_c_ata_smart.html#adb26cbc92e49318212b75f58a8b998af',1,'CAtaSmart']]],
+  ['ata_5fflags_5fdrdy_5frequired_4407',['ATA_FLAGS_DRDY_REQUIRED',['../class_c_ata_smart.html#a5fa0810bb1df0f098dc5ba59b1ff07f8',1,'CAtaSmart']]],
+  ['ataflags_4408',['AtaFlags',['../struct_c_ata_smart_1_1___a_t_a___p_a_s_s___t_h_r_o_u_g_h___e_x.html#adb224637adf10c0752ea4ba3a44ea454',1,'CAtaSmart::_ATA_PASS_THROUGH_EX']]],
+  ['attached_4409',['Attached',['../struct_c_ata_smart_1_1___c_s_m_i___s_a_s___p_h_y___e_n_t_i_t_y.html#a9bf69f2cfc27f701bb95e1936d0a218c',1,'CAtaSmart::_CSMI_SAS_PHY_ENTITY']]],
+  ['attribute_4410',['Attribute',['../struct_c_ata_smart_1_1_a_t_a___s_m_a_r_t___i_n_f_o.html#a1b44fc4d42639688ca521bbe3c77eeb6',1,'CAtaSmart::ATA_SMART_INFO']]],
+  ['attributecount_4411',['AttributeCount',['../struct_c_ata_smart_1_1_a_t_a___s_m_a_r_t___i_n_f_o.html#a286074cee02d68a1e7e504493405e95f',1,'CAtaSmart::ATA_SMART_INFO']]]
+];

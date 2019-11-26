@@ -1,0 +1,28 @@
+var stdafx_8h =
+[
+    [ "_AFX_ALL_WARNINGS", "stdafx_8h.html#ab5fd5e01d3484ef3116a878a65b82980", null ],
+    [ "_ATL_CSTRING_EXPLICIT_CONSTRUCTORS", "stdafx_8h.html#a137e19a46f145129447af81af06def9f", null ],
+    [ "_SECURE_ATL", "stdafx_8h.html#acc42367d17588c3836e65909335b5a8d", null ],
+    [ "_WIN32_DCOM", "stdafx_8h.html#a5903348ead0e963961468f1f57de4ca7", null ],
+    [ "_WIN32_IE", "stdafx_8h.html#ad4562ce705fe4682e63dc8f1ea9dd344", null ],
+    [ "_WIN32_WINDOWS", "stdafx_8h.html#a074ca98c073d899c62fc6629918186c8", null ],
+    [ "_WIN32_WINNT", "stdafx_8h.html#ac50762666aa00bd3a4308158510f1748", null ],
+    [ "PRODUCT_COPY_YEAR", "stdafx_8h.html#a79a3ac6e551304d945f948d6b4296895", null ],
+    [ "PRODUCT_COPYRIGHT", "stdafx_8h.html#afeab170e2424a762d4e8f67e6a16d097", null ],
+    [ "PRODUCT_EDITION", "stdafx_8h.html#ad2d75471866f8b3026a367fbe6ed0bf6", null ],
+    [ "PRODUCT_LICENSE", "stdafx_8h.html#aa6df3d913b2c3e40778a26b6c39e1ec4", null ],
+    [ "PRODUCT_NAME", "stdafx_8h.html#a2fd81ded1b6a151f629441182c358d5b", null ],
+    [ "PRODUCT_RELEASE", "stdafx_8h.html#a37fb0af58d857469b200415cab4e283d", null ],
+    [ "PRODUCT_SHORT_NAME", "stdafx_8h.html#a08466371963d64e2bb5d0310326d70bd", null ],
+    [ "PRODUCT_VERSION", "stdafx_8h.html#a0ba1a85361118228096108c7d425f84b", null ],
+    [ "PROJECT_NAME", "stdafx_8h.html#ae73053051efbb45c3a39751f5ce9fb36", null ],
+    [ "URL_CRYSTAL_DEW_WORLD_EN", "stdafx_8h.html#a51e0352018761b6496f82a396a2f7773", null ],
+    [ "URL_CRYSTAL_DEW_WORLD_JA", "stdafx_8h.html#acb3d269b49239f0b9e3e655fba8da508", null ],
+    [ "URL_HTML_HELP_EN", "stdafx_8h.html#a5c0152a256d1cdf9d72deb247a2793bb", null ],
+    [ "URL_HTML_HELP_JA", "stdafx_8h.html#a185a6961706e48d59befd5ddb4a2529e", null ],
+    [ "URL_PROJECT_SHIZUKU_EN", "stdafx_8h.html#ae1cfe1787d23c51275d1c559eaccc68b", null ],
+    [ "URL_PROJECT_SHIZUKU_JA", "stdafx_8h.html#a6ff9f4ed57265e4b05a0e3433cd681fd", null ],
+    [ "URL_PRONAMA", "stdafx_8h.html#aabb96b7f4f3711bba8fd04c37899dc4c", null ],
+    [ "VC_EXTRALEAN", "stdafx_8h.html#a0172fbace36625330d5f0f163a1ddc1a", null ],
+    [ "WINVER", "stdafx_8h.html#a966cd377b9f3fdeb1432460c33352af1", null ]
+];

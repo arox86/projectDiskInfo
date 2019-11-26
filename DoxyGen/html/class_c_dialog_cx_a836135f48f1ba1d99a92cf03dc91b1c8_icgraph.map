@@ -1,0 +1,11 @@
+<map id="CDialogCx::OnInitDialog" name="CDialogCx::OnInitDialog">
+<area shape="rect" id="node1" title=" " alt="" coords="476,173,637,200"/>
+<area shape="rect" id="node2" href="$class_c_health_dlg.html#a5fb735933100e0f800826db251939595" title=" " alt="" coords="245,5,411,32"/>
+<area shape="rect" id="node3" href="$class_c_temperature_dlg.html#a7dd24a70e70889c212ae7c0708cf5bdb" title=" " alt="" coords="228,56,428,83"/>
+<area shape="rect" id="node4" href="$class_c_sound_setting_dlg.html#aea20e5eea883dab6ddfe293da4c28289" title=" " alt="" coords="243,107,413,149"/>
+<area shape="rect" id="node5" href="$class_c_about_dlg.html#ac000be71252e280b53886db326fd739f" title=" " alt="" coords="247,173,409,200"/>
+<area shape="rect" id="node6" href="$class_c_font_selection.html#aee669444f7c8cf2b4a8f7c6fddae18ea" title=" " alt="" coords="233,224,423,251"/>
+<area shape="rect" id="node7" href="$class_c_main_dialog.html#ac03d9a082969bde52a773c679a0b89a6" title=" " alt="" coords="241,275,415,301"/>
+<area shape="rect" id="node9" href="$class_c_setting_dlg.html#a349c6bc67bc6ab732a995ad4db268408" title=" " alt="" coords="243,325,413,352"/>
+<area shape="rect" id="node8" href="$class_c_disk_info_dlg.html#a30bb105ce862f19fc596e0094be8dbcf" title=" " alt="" coords="5,275,180,301"/>
+</map>

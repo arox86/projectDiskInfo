@@ -1,0 +1,9 @@
+<map id="CAtaSmart::_INTEL_NVME_PASS_THROUGH" name="CAtaSmart::_INTEL_NVME_PASS_THROUGH">
+<area shape="rect" id="node1" title=" " alt="" coords="95,821,277,913"/>
+<area shape="rect" id="node2" href="$struct_c_ata_smart_1_1___s_r_b___i_o___c_o_n_t_r_o_l.html" title=" " alt="" coords="48,571,196,737"/>
+<area shape="rect" id="node3" href="$struct_c_ata_smart_1_1___i_n_t_e_l___n_v_m_e___p_a_y_l_o_a_d.html" title=" " alt="" coords="221,549,402,759"/>
+<area shape="rect" id="node4" href="$struct_c_ata_smart_1_1_n_v_m_e___c_m_d.html" title=" " alt="" coords="227,233,395,487"/>
+<area shape="rect" id="node5" href="$union_c_ata_smart_1_1_n_v_m_e___i_d_e_n_t_i_f_y___c_d_w10.html" title=" " alt="" coords="5,20,201,156"/>
+<area shape="rect" id="node6" href="$union_c_ata_smart_1_1_n_v_m_e___g_e_t___l_o_g___p_a_g_e___c_d_w10.html" title=" " alt="" coords="226,5,397,171"/>
+<area shape="rect" id="node7" href="$union_c_ata_smart_1_1_n_v_m_e___c_d_w0.html" title=" " alt="" coords="421,5,599,171"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,157,88,184"/>
+<area shape="rect" id="node2" href="$class_c_dialog_cx.html" title=" " alt="" coords="136,157,219,184"/>
+<area shape="rect" id="node3" href="$class_c_about_dlg.html" title=" " alt="" coords="289,5,373,32"/>
+<area shape="rect" id="node4" href="$class_c_font_selection.html" title=" " alt="" coords="275,56,386,83"/>
+<area shape="rect" id="node5" href="$class_c_health_dlg.html" title=" " alt="" coords="287,107,374,133"/>
+<area shape="rect" id="node6" href="$class_c_main_dialog.html" title=" " alt="" coords="283,157,378,184"/>
+<area shape="rect" id="node8" href="$class_c_setting_dlg.html" title=" " alt="" coords="285,208,376,235"/>
+<area shape="rect" id="node9" href="$class_c_sound_setting_dlg.html" title=" " alt="" coords="267,259,395,285"/>
+<area shape="rect" id="node10" href="$class_c_temperature_dlg.html" title=" " alt="" coords="269,309,392,336"/>
+<area shape="rect" id="node7" href="$class_c_disk_info_dlg.html" title=" " alt="" coords="443,157,539,184"/>
+</map>
