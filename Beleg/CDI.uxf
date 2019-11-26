@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>110</x>
+      <x>120</x>
       <y>90</y>
       <w>210</w>
       <h>90</h>
@@ -19,7 +19,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>640</x>
+      <x>650</x>
       <y>300</y>
       <w>310</w>
       <h>100</h>
@@ -34,35 +34,34 @@ getDiskInfo()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>110</x>
+      <x>120</x>
       <y>520</y>
       <w>210</w>
       <h>70</h>
     </coordinates>
-    <panel_attributes>DiskInfoApp
+    <panel_attributes>Disk
 --
-
+SMARTData : map &lt; int , int &gt;
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>110</x>
+      <x>120</x>
       <y>320</y>
       <w>210</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>DiskInfoApp
 --
-
-</panel_attributes>
+gradeDiskHealth(Disk)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>200</x>
+      <x>210</x>
       <y>170</y>
       <w>50</w>
       <h>170</h>
@@ -75,7 +74,7 @@ m2=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>310</x>
+      <x>320</x>
       <y>350</y>
       <w>350</w>
       <h>40</h>
