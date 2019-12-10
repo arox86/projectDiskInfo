@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Bubble Chart</title>
+	<script src="Chart.bundle.js"></script>
+	<script src="utils.js"></script>
+	<style type="text/css">
+		canvas{
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="container" style="width: 75%;">
+		<canvas id="canvas"></canvas>
+	</div>
+	<script>
+		var DEFAULT_DATASET_SIZE = 7;
+		var addedCount = 0;
+		var color = Chart.helpers.color;
+		var bubbleChartData = {
+			animation: {
+				duration: 10000
+			},
+			datasets: [{
+                label: 'My First dataset',
+				backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+				borderColor: window.chartColors.red,
+				borderWidth: 1,
+                data: [{
+					x: 1,
+					y: 30,
+					r: Math.abs(0.3) / 0.01,
+				}, {
+					x: 1.1,
+					y: 40,
+					r: Math.abs(0.3) / 0.01,
+				}, {
+					x: 1.2,
+					y: 50,
+					r: Math.abs(0.3) / 0.01,
+				}, {
+					x: 1.4,
+					y: 60,
+					r: Math.abs(0.3) / 0.01,
+				}, {
+					x: 1.5,
+					y: 70,
+					r: Math.abs(0.3) / 0.01,
+					x: 1.6,
+					y: 80,
+					r: Math.abs(0.3) / 0.01,
+				}, {
+					x: 1.7,
+					y: 90,
+					r: Math.abs(0.3) / 0.01,
+                }]
+			}]
+		};
+		window.onload = function() {
+			var ctx = document.getElementById('canvas').getContext('2d');
+			window.myChart = new Chart(ctx, {
+				type: 'bubble',
+				data: bubbleChartData,
+                xAxisID: 'bottom',
+                yAxisID: 'left',
+				options: {
+                    scales: {
+                        xAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'x-Achse'
+                            },
+                            id: 'bottom',
+                            type: 'linear',
+                            position: 'bottom'
+                        }],
+                        yAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'y-Achse'
+                            },
+                            id: 'left',
+                            type: 'linear',
+                            position: 'left'
+                        }]
+                    },
+					responsive: true,
+					title: {
+						display: true,
+						text: 'Temperature/Lebenszeit'
+					},
+					tooltips: {
+						mode: 'point'
+					}
+				}
+			});
+		};
+		var colorNames = Object.keys(window.chartColors);
+	</script>
+</body>
+
+</html>

@@ -252,7 +252,7 @@ BOOL CDiskInfoApp::InitInstance()
 
 	BOOL flagAfxOleInit = FALSE;
 
-	if(flagEarthlight)
+	if(flagEarthlight) //FOUND THE GRAPH
 	{
 		CGraphDlg dlg(NULL, defaultDisk);
 		m_pMainWnd = &dlg;
