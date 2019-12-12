@@ -1526,7 +1526,7 @@ public:
 		INT					PowerOnRawValue;
 		INT					PowerOnStartRawValue;
 		DWORD				PowerOnCount;
-		INT					Temperature;
+		INT					Temperature; // HIER DU NUTTE
 		double				TemperatureMultiplier;
 		DWORD				NominalMediaRotationRate;
 //		double				Speed;

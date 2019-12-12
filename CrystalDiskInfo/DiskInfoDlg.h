@@ -186,7 +186,7 @@ protected:
 
 	DWORD m_SelectDisk;
 	DWORD m_DriveMenuPage;
-	DWORD m_AutoRefreshStatus;
+	double m_AutoRefreshStatus;
 	DWORD m_WaitTimeStatus;
 	DWORD m_AutoDetectionStatus;
 	DWORD m_RawValues;
@@ -306,7 +306,7 @@ protected:
 	CString Encode10X(DWORD value);
 	DWORD Decode10X(CString cstr);
 
-	void CheckRadioAutoRefresh(int id, int value);
+	void CheckRadioAutoRefresh(int id, double value);
 	void CheckRadioWaitTime(int id, int value);
 	BOOL CheckRadioZoomType(int id, int value);
 	void CheckRadioRawValues(int id, int value);
@@ -398,6 +398,7 @@ public:
 	afx_msg void OnTimer(UINT_PTR nIDEvent);
 	afx_msg void OnHelpAboutSmart();
 	afx_msg void OnAutoRefreshDisable();
+	afx_msg void OnAutoRefresh01Sec();
 	afx_msg void OnAutoRefresh01Min();
 	afx_msg void OnAutoRefresh03Min();
 	afx_msg void OnAutoRefresh05Min();

@@ -295,7 +295,7 @@ CDiskInfoDlg::CDiskInfoDlg(CWnd* pParent /*=NULL*/, BOOL flagStartupExit)
 	m_ZoomType = GetPrivateProfileInt(_T("Setting"), _T("ZoomType"), ZOOM_TYPE_AUTO, m_Ini);
 
 	// Setting
-	SAVE_SMART_PERIOD = GetPrivateProfileInt(_T("Setting"), _T("SAVE_SMART_PERIOD"), 150, m_Ini);
+	SAVE_SMART_PERIOD = GetPrivateProfileInt(_T("Setting"), _T("SAVE_SMART_PERIOD"), 0.1, m_Ini); // PerOfTime
 	ALARM_TEMPERATURE_PERIOD = GetPrivateProfileInt(_T("Setting"), _T("ALARM_TEMPERATURE_PERIOD"), 60 * 60, m_Ini);
 
 	if(m_FlagEventLog)
@@ -569,6 +569,7 @@ BEGIN_MESSAGE_MAP(CDiskInfoDlg, CMainDialog)
 	ON_COMMAND(ID_REFRESH, &CDiskInfoDlg::OnRefresh)
 	ON_COMMAND(ID_HELP_ABOUT_SMART, &CDiskInfoDlg::OnHelpAboutSmart)
 	ON_COMMAND(ID_AUTO_REFRESH_DISABLE, &CDiskInfoDlg::OnAutoRefreshDisable)
+	ON_COMMAND(ID_AUTO_REFRESH_01_SEC, &CDiskInfoDlg::OnAutoRefresh01Sec)
 	ON_COMMAND(ID_AUTO_REFRESH_01_MIN, &CDiskInfoDlg::OnAutoRefresh01Min)
 	ON_COMMAND(ID_AUTO_REFRESH_03_MIN, &CDiskInfoDlg::OnAutoRefresh03Min)
 	ON_COMMAND(ID_AUTO_REFRESH_05_MIN, &CDiskInfoDlg::OnAutoRefresh05Min)

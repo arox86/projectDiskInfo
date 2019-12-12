@@ -1,6 +1,6 @@
 ﻿//{{NO_DEPENDENCIES}}
-// Microsoft Visual C++ で生成されたインクルード ファイル。
-// DiskInfo.rc で使用
+// Von Microsoft Visual C++ generierte Includedatei.
+// Verwendet durch DiskInfo.rc
 //
 #define IDD_DISKINFO_DIALOG             102
 #define IDR_HTML_DUMMY                  103
@@ -631,7 +631,6 @@
 #define IDI_TEMP_RF97                   797
 #define IDI_TEMP_RF98                   798
 #define IDI_TEMP_RF99                   799
-
 #define IDC_LIST                        1001
 #define IDC_AAM_SCROLLBAR               1002
 #define IDC_APM_SCROLLBAR               1003
@@ -737,13 +736,9 @@
 #define IDC_LABEL_05                    1098
 #define IDC_LABEL_C6                    1099
 #define IDC_LABEL_C5                    1100
-
-
 #define IDC_VALUE_TEMPERATURE           1101
 #define IDC_VALUE_TEMPERATURE_F         1102
 #define IDC_SCROLLBAR_TEMPERATURE       1103
-
-
 #define ID_FILE_EXIT                    32771
 #define ID_HELP_ABOUT                   32772
 #define ID_HELP_CRYSTALDEWWORLD         32773
@@ -953,13 +948,16 @@
 #define ID_HIDE_NO_SMART_DISK           33132
 #define ID_GREEN_MODE                   33133
 #define ID_USB_NVME_REALTEK             33134
+#define ID_Menu33135                    33135
+#define ID_Menu33136                    33136
+#define ID_AUTO_REFRESH_01_SEC          33137
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        171
-#define _APS_NEXT_COMMAND_VALUE         33135
+#define _APS_NEXT_COMMAND_VALUE         33138
 #define _APS_NEXT_CONTROL_VALUE         1101
 #define _APS_NEXT_SYMED_VALUE           111
 #endif

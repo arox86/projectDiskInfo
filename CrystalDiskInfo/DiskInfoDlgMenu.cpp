@@ -299,20 +299,21 @@ void CDiskInfoDlg::OnHelpAboutSmart()
 	OpenUrl(url);
 }
 
-void CDiskInfoDlg::OnAutoRefreshDisable(){	CheckRadioAutoRefresh(ID_AUTO_REFRESH_DISABLE, 0);}
-void CDiskInfoDlg::OnAutoRefresh01Min(){	CheckRadioAutoRefresh(ID_AUTO_REFRESH_01_MIN, 1);}
-void CDiskInfoDlg::OnAutoRefresh03Min(){	CheckRadioAutoRefresh(ID_AUTO_REFRESH_03_MIN, 3);}
-void CDiskInfoDlg::OnAutoRefresh05Min(){	CheckRadioAutoRefresh(ID_AUTO_REFRESH_05_MIN, 5);}
-void CDiskInfoDlg::OnAutoRefresh10Min(){	CheckRadioAutoRefresh(ID_AUTO_REFRESH_10_MIN, 10);}
-void CDiskInfoDlg::OnAutoRefresh30Min(){	CheckRadioAutoRefresh(ID_AUTO_REFRESH_30_MIN, 30);}
-void CDiskInfoDlg::OnAutoRefresh60Min(){	CheckRadioAutoRefresh(ID_AUTO_REFRESH_60_MIN, 60);}
+void CDiskInfoDlg::OnAutoRefreshDisable(){CheckRadioAutoRefresh(ID_AUTO_REFRESH_DISABLE, 0);}
+void CDiskInfoDlg::OnAutoRefresh01Sec() { CheckRadioAutoRefresh(ID_AUTO_REFRESH_01_SEC, (0.0167)) ; } // NEW
+void CDiskInfoDlg::OnAutoRefresh01Min(){CheckRadioAutoRefresh(ID_AUTO_REFRESH_01_MIN, 1);}
+void CDiskInfoDlg::OnAutoRefresh03Min(){CheckRadioAutoRefresh(ID_AUTO_REFRESH_03_MIN, 3);}
+void CDiskInfoDlg::OnAutoRefresh05Min(){CheckRadioAutoRefresh(ID_AUTO_REFRESH_05_MIN, 5);}
+void CDiskInfoDlg::OnAutoRefresh10Min(){CheckRadioAutoRefresh(ID_AUTO_REFRESH_10_MIN, 10);}
+void CDiskInfoDlg::OnAutoRefresh30Min(){CheckRadioAutoRefresh(ID_AUTO_REFRESH_30_MIN, 30);}
+void CDiskInfoDlg::OnAutoRefresh60Min(){CheckRadioAutoRefresh(ID_AUTO_REFRESH_60_MIN, 60);}
 void CDiskInfoDlg::OnAutoRefresh120Min(){ CheckRadioAutoRefresh(ID_AUTO_REFRESH_120_MIN, 120); }
 void CDiskInfoDlg::OnAutoRefresh180Min(){ CheckRadioAutoRefresh(ID_AUTO_REFRESH_180_MIN, 180); }
 void CDiskInfoDlg::OnAutoRefresh360Min(){ CheckRadioAutoRefresh(ID_AUTO_REFRESH_360_MIN, 360); }
 void CDiskInfoDlg::OnAutoRefresh720Min(){ CheckRadioAutoRefresh(ID_AUTO_REFRESH_720_MIN, 720); }
 void CDiskInfoDlg::OnAutoRefresh1440Min(){ CheckRadioAutoRefresh(ID_AUTO_REFRESH_1440_MIN, 1440); }
 
-void CDiskInfoDlg::CheckRadioAutoRefresh(int id, int value)
+void CDiskInfoDlg::CheckRadioAutoRefresh(int id, double value)
 {
 	CMenu *menu = GetMenu();
 	menu->CheckMenuRadioItem(ID_AUTO_REFRESH_DISABLE, ID_AUTO_REFRESH_1440_MIN, id, MF_BYCOMMAND);
@@ -322,7 +323,7 @@ void CDiskInfoDlg::CheckRadioAutoRefresh(int id, int value)
 	m_AutoRefreshStatus = value;
 
 	CString cstr;
-	cstr.Format(_T("%d"), value);
+	cstr.Format(_T("%f"), value); //NEW
 	WritePrivateProfileString(_T("Setting"), _T("AutoRefresh"), cstr, m_Ini);
 
 	if(value == 0)
@@ -332,7 +333,7 @@ void CDiskInfoDlg::CheckRadioAutoRefresh(int id, int value)
 	else
 	{
 		KillTimer(TIMER_AUTO_REFRESH);
-		SetTimer(TIMER_AUTO_REFRESH, 1000 * 60 * value, 0);
+		SetTimer(TIMER_AUTO_REFRESH, 1000  * 60 * value, 0);
 	}
 }
 
@@ -340,22 +341,27 @@ void CDiskInfoDlg::CheckRadioAutoRefresh()
 {
 	int id = ID_AUTO_REFRESH_DISABLE;
 
-	switch(m_AutoRefreshStatus)
-	{
-	case    1: id = ID_AUTO_REFRESH_01_MIN; break;
-	case    3: id = ID_AUTO_REFRESH_03_MIN; break;
-	case    5: id = ID_AUTO_REFRESH_05_MIN; break;
-	case   10: id = ID_AUTO_REFRESH_10_MIN; break;
-	case   30: id = ID_AUTO_REFRESH_30_MIN; break;
-	case   60: id = ID_AUTO_REFRESH_60_MIN; break;
-	case  120: id = ID_AUTO_REFRESH_120_MIN; break;
-	case  180: id = ID_AUTO_REFRESH_180_MIN; break;
-	case  360: id = ID_AUTO_REFRESH_360_MIN; break;
-	case  720: id = ID_AUTO_REFRESH_720_MIN; break;
-	case 1440: id = ID_AUTO_REFRESH_1440_MIN; break;
+	//switch(m_AutoRefreshStatus)
+	//{
+	//case    1: id = ID_AUTO_REFRESH_01_SEC; break; //NEW 1SECOND
+	//case    2: id = ID_AUTO_REFRESH_01_MIN; break;
+	//case    3: id = ID_AUTO_REFRESH_03_MIN; break;
+	//case    5: id = ID_AUTO_REFRESH_05_MIN; break;
+	//case   10: id = ID_AUTO_REFRESH_10_MIN; break;
+	//case   30: id = ID_AUTO_REFRESH_30_MIN; break;
+	//case   60: id = ID_AUTO_REFRESH_60_MIN; break;
+	//case  120: id = ID_AUTO_REFRESH_120_MIN; break;
+	//case  180: id = ID_AUTO_REFRESH_180_MIN; break;
+	//case  360: id = ID_AUTO_REFRESH_360_MIN; break;
+	//case  720: id = ID_AUTO_REFRESH_720_MIN; break;
+	//case 1440: id = ID_AUTO_REFRESH_1440_MIN; break;
 
-	default: id = ID_AUTO_REFRESH_DISABLE; break;
-	}
+	//default: id = ID_AUTO_REFRESH_DISABLE; break;
+	//}
+
+	// NEW FUNCTION USING IF STATEMENT INSTEAD OF CASE
+
+	if (m_AutoRefreshStatus == 1) { id = ID_AUTO_REFRESH_01_SEC;  };
 
 	CMenu *menu = GetMenu();
 	menu->CheckMenuRadioItem(ID_AUTO_REFRESH_DISABLE, ID_AUTO_REFRESH_1440_MIN, id, MF_BYCOMMAND);
@@ -378,6 +384,7 @@ void CDiskInfoDlg::OnWait40Sec(){	CheckRadioWaitTime(ID_WAIT_40_SEC, 40);	}
 void CDiskInfoDlg::OnWait50Sec(){	CheckRadioWaitTime(ID_WAIT_50_SEC, 50);	}
 void CDiskInfoDlg::OnWait60Sec(){	CheckRadioWaitTime(ID_WAIT_60_SEC, 60);	}
 void CDiskInfoDlg::OnWait90Sec(){	CheckRadioWaitTime(ID_WAIT_90_SEC, 90);	}
+
 void CDiskInfoDlg::OnWait120Sec(){	CheckRadioWaitTime(ID_WAIT_120_SEC, 120);}
 void CDiskInfoDlg::OnWait150Sec(){	CheckRadioWaitTime(ID_WAIT_150_SEC, 150);}
 void CDiskInfoDlg::OnWait180Sec(){	CheckRadioWaitTime(ID_WAIT_180_SEC, 180);}
