@@ -3,98 +3,40 @@
 #include <fstream>
 #include <sstream>
 
-#define BUBBLEHTML	"CdiResource\bubble\bubblePlot.html"
-#define DATAPATH	"Smart\testData.csv"
+#define BUBBLEEXPORT	"CdiResource/bubble/bubblePlot.html"
+#define BUBBLEIMPORT1	"CdiResource/bubble/bubbleScript1.txt"
+#define BUBBLEIMPORT2	"CdiResource/bubble/bubbleScript2.txt"
+#define DATAPATH	"Smart/testData.csv"
+#define BUBBLESIZE	3
 
 int BubblePlotHandler::makeHTML()
 {
 	std::stringstream	html_data;
 
-	html_data << "";
+	std::vector<std::string> dataX = *getDataFromFile("Smart/testData/Temperatures.csv");
+	std::vector<std::string> dataY = *getDataFromFile("Smart/testData/HostWrites.csv");
 
-	std::fstream		html_script_file(BUBBLEHTML, std::ios::out | std::ios::trunc);
-
-	if (html_script_file.is_open() && !html_script_file.bad())
+	for (int i = 0; i < max(dataX.size(), dataY.size()); i++)
 	{
-		html_script_file << "<!doctype html>" 
-			<< "<html>"
-			<< "<head>"
-			<< "<title>Bubble Chart< / title>"
-			<< "<script src = \"Chart.bundle.js\">< / script>"
-			<< "<script src = \"utils.js\">< / script>"
-			<< "<style type = \"text/css\">"
-			<< "canvas{"
-			<< "	-moz - user - select: none;"
-			<< "	-webkit - user - select: none;"
-			<< "	-ms - user - select: none;"
-			<< "}"
-			<< "</style>"
-			<< "</head>"
-			<< "<body>"
-			<< "	<div id = \"container\" style = \"width: 75%;\">"
-			<< "		<canvas id = \"canvas\">< / canvas>"
-			<< "	</div>"
-			<< "<script>"
-			<< "	var DEFAULT_DATASET_SIZE = 7;"
-			<< "	var addedCount = 0;"
-			<< "	var color = Chart.helpers.color;"
-			<< "	var bubbleChartData = {"
-			<< "		animation: {"
-			<< "			duration: 10000"
-			<< "		},"
-			<< "	datasets : [{"
-			<< "		label: 'My First dataset',"
-			<< "		backgroundColor : color(window.chartColors.red).alpha(0.5).rgbString(),"
-			<< "		borderColor : window.chartColors.red,"
-			<< "		borderWidth : 1,"
-			<< "		data : ["
-			<< html_data.str()
-			<< "]"
-			<< "}]"
-			<< "};"
-			<< "window.onload = function() {"
-			<< "var ctx = document.getElementById('canvas').getContext('2d');"
-			<< "window.myChart = new Chart(ctx, {"
-			<< "	type: 'bubble',"
-			<< "	data : bubbleChartData,"
-			<< "	xAxisID : 'bottom',"
-			<< "	yAxisID : 'left',"
-			<< "	options : {"
-			<< "		scales: {"
-			<< "			xAxes: [{"
-			<< "				scaleLabel: {"
-			<< "					display: true,"
-			<< "					labelString : 'x-Achse'"
-			<< "				},"
-			<< "				id : 'bottom',"
-			<< "				type : 'linear',"
-			<< "				position : 'bottom'"
-			<< "			}] ,"
-			<< "			yAxes: [{"
-			<< "				scaleLabel: {"
-			<< "					display: true,"
-			<< "					labelString : 'y-Achse'"
-			<< "				},"
-			<< "				id : 'left',"
-			<< "				type : 'linear',"
-			<< "				position : 'left'"
-			<< "			}]"
-			<< "		},"
-			<< "		responsive: true,"
-			<< "	title : {"
-			<< "			display: true,"
-			<< "			text : 'Temperature/Lebenszeit'"
-			<< "		},"
-			<< "		tooltips : {"
-			<< "			mode: 'point'"
-			<< "		}"
-			<< "	}"
-			<< "	});"
-			<< "} ;"
-			<< "var colorNames = Object.keys(window.chartColors);"
-			<< "</script>"
-			<< "</body>"
-			<< "</html>";
+		html_data << "{\n"
+			<< "x: " << dataX[i]
+			<< "y: " << dataY[i]
+			<< "z: " << i / BUBBLESIZE;
+	}
+
+	std::ofstream		html_script_export(BUBBLEEXPORT, std::ios::out | std::ios::trunc);
+	std::ifstream		html_script_import1(BUBBLEIMPORT1, std::ios::in);
+	std::ifstream		html_script_import2(BUBBLEIMPORT2, std::ios::in);
+
+	std::string html_fst_half(	(std::istreambuf_iterator<char>(html_script_import1)),
+								(std::istreambuf_iterator<char>()						));
+	
+	std::string html_snd_half(	(std::istreambuf_iterator<char>(html_script_import1)),
+								(std::istreambuf_iterator<char>()						));
+
+	if (html_script_export.is_open() && !html_script_export.bad())
+	{
+		html_script_export << html_fst_half	<< html_data.str() << html_snd_half;
 	}
 	else
 	{
@@ -102,7 +44,7 @@ int BubblePlotHandler::makeHTML()
 	}
 
 
-	html_script_file.close();
+	html_script_export.close();
 	
 	return 0;
 }
