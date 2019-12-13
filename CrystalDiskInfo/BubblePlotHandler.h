@@ -1,11 +1,8 @@
 #pragma once
-
-#include "AtaSmart.h"
-#include <iosfwd>
 #include <string>
 #include <vector>
 
-class BubblePlotHandler : public CAtaSmart
+class BubblePlotHandler
 {
 public:
 	int makeHTML();

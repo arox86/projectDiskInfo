@@ -10,6 +10,8 @@
 #include "DiskInfoDlg.h"
 #include "AtaSmart.h"
 
+#include "BubblePlotHandler.h"
+
 #include "GetFileVersion.h"
 #include "GetOsInfo.h"
 
