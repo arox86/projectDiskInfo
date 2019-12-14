@@ -59,7 +59,7 @@ public:
 	CString m_LegendPositon;
 	CString m_TimeFormat;
 
-	enum { IDD = IDD_GRAPH, IDH = IDR_HTML_DUMMY };
+	enum { IDD = IDD_GRAPH, IDH = IDR_HTML_DUMMY}; // NEU ENUM
 
 protected:
 	HICON m_hIcon;

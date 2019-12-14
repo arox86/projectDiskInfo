@@ -22,7 +22,7 @@ public:
 	COLORREF m_CurrentLineColor[CAtaSmart::MAX_DISK + 1];
 	COLORREF m_DefaultLineColor[CAtaSmart::MAX_DISK + 1];
 
-	enum { IDD = IDD_OPTION, IDH = IDR_HTML_DUMMY };
+	enum { IDD = IDD_OPTION, IDH = IDR_HTML_DUMMY};
 
 protected:
 	virtual void DoDataExchange(CDataExchange* pDX);

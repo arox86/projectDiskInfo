@@ -1183,6 +1183,9 @@
     <None Include="res\dummy.html" />
     <None Include="res\good.ico" />
     <None Include="res\goodGreen.ico" />
+    <None Include="res\html1.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
     <None Include="res\unknown.ico" />
     <None Include="res\00.ico" />
     <None Include="res\01.ico" />

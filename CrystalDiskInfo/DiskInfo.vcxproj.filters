@@ -866,6 +866,7 @@
     <None Include="RuleSet.ruleset">
       <Filter>Header Files</Filter>
     </None>
+    <None Include="res\html1.htm" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="DiskInfo.rc">

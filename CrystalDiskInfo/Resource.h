@@ -30,6 +30,8 @@
 #define IDR_WAVE1                       150
 #define IDD_ALARM_HISTORY               151
 #define IDD_SOUND_SETTINGS              152
+#define IDD_DIALOG1                     174
+#define IDD_BUBBLE                      174
 #define IDI_TEMP_00                     200
 #define IDI_TEMP_BC00                   200
 #define IDI_TEMP_BC01                   201
@@ -951,14 +953,16 @@
 #define ID_Menu33135                    33135
 #define ID_Menu33136                    33136
 #define ID_AUTO_REFRESH_01_SEC          33137
+#define ID_Menu33138                    33138
+#define ID_FUNCTION_CHARTS              33139
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        171
-#define _APS_NEXT_COMMAND_VALUE         33138
-#define _APS_NEXT_CONTROL_VALUE         1101
+#define _APS_NEXT_RESOURCE_VALUE        177
+#define _APS_NEXT_COMMAND_VALUE         33140
+#define _APS_NEXT_CONTROL_VALUE         1111
 #define _APS_NEXT_SYMED_VALUE           111
 #endif
 #endif

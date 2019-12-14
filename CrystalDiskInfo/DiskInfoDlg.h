@@ -28,6 +28,7 @@
 
 #include <Dbt.h>
 
+
 #define REGISTRY_PATH _T("software\\Crystal Dew World\\CrystalDiskInfo")
 
 // Task Tray
@@ -129,8 +130,10 @@ protected:
 //	CAlarmHistoryDlg*	m_AlarmHistoryDlg;
 	CSoundSettingDlg*	m_SoundSettingDlg;
 	CGraphDlg*			m_GraphDlg;
+	//CBubbleDlg*			m_BubbleDlg; // Neue abgeleitete Klasse
 	CListCtrlEx			m_List;
 	CImageList			m_ImageList;
+	
 
 	CButtonCx			m_ButtonDisk[8];
 

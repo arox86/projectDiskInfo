@@ -1629,7 +1629,11 @@ BEGIN
         END
         MENUITEM "Rescan\tF6",                  ID_RESCAN
         MENUITEM SEPARATOR
-        MENUITEM "Graph",                       ID_GRAPH
+        POPUP "Charts"
+        BEGIN
+            MENUITEM "Bubblechart",                 ID_Menu33138
+            MENUITEM "Graph",                       ID_GRAPH
+        END
         MENUITEM SEPARATOR
         MENUITEM "Hide Serial Number",          ID_HIDE_SERIAL_NUMBER
         MENUITEM "Resident",                    ID_RESIDENT
@@ -1877,7 +1881,73 @@ IDR_HTML_DUMMY          HTML                    "res\\dummy.html"
 
 CDI_SOUND_001           OPUS                    "res\\001soundkenjin.opus"
 
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_GRAPH AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
 #endif    // Japanisch (Japan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_BUBBLE DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,155,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,252,155,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_BUBBLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_BUBBLE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // Deutsch (Deutschland) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
