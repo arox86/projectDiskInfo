@@ -2256,7 +2256,7 @@ void CDiskInfoDlg::SaveSmartInfo(DWORD i)
 	static CTime preTime[CAtaSmart::MAX_DISK] = { 0 };
 	CTime time = CTime::GetTickCount();
 
-	if (time - preTime[i] < SAVE_SMART_PERIOD)
+	if (time - preTime[i] < SAVE_SMART_PERIOD) //BUMSFICK
 	{
 		return;
 	}
@@ -2316,7 +2316,7 @@ void CDiskInfoDlg::SaveSmartInfo(DWORD i)
 	_stprintf_s(str, 256, _T("%d"), m_Ata.vars[i].DiskStatus);
 	WritePrivateProfileString(disk, _T("HealthStatus"), str, dir + _T("\\") + SMART_INI);
 
-	if (m_Ata.vars[i].Temperature > -300)
+	if (m_Ata.vars[i].Temperature > -300) // NOCH NÄHER NUTTE
 	{
 		AppendLog(dir, disk, _T("Temperature"), time, m_Ata.vars[i].Temperature, flagFirst);
 	}

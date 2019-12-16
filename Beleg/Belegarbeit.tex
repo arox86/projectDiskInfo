@@ -2,8 +2,8 @@
 \usepackage{babel}
 \usepackage[utf8]{inputenc}
 \begin{document}
-\title{Software Technik Projekt: CrystalDiskInfo}
-\author{Philipp Horländer, Konrad Münch}
+\title{ {\huge Software Technik Projekt: CrystalDiskInfo} \\{\large Computer Engineering, Wintersemester 2019/2020}}
+\author{Philipp Horländer, 566045 \\Konrad Münch, XXXXXX \\ \\Dozent: Prof. Dr. Baar}
 \date{Berlin, \today}
 \maketitle
 \newpage
@@ -16,7 +16,7 @@
 Es gilt sich eine Open Source Software auszusuchen und diese zu "Reverse-Engineeren" und abzuändern. Dafür sollen verschiedenen Modelle der Software angefertigt werden, wie Use-Case-, Domänen- und ggf. weitere Modelle. Das ganze soll mit einer Belegarbeit dokumentiert werden.
 
 \subsection{Beschreibung der Software}
-CrystalDiskInfo ist ein nützliches Open-Soruce Programm für die Bewertung und Überwachung von internen als auch externen HDDs und SSDs. Mit Hilfe der S.M.A.R.T. Technologie (Self-Monitoring, Analysis, Reporting Technology) werden detaillierte Daten, wie zum Beispiel Seriennummer, Temperatur, Lese- und Schreibzyklen, Fehlerrate beim Lesen und Schreiben, Speicher und Puffergrößen, als auch die gesamten Betriebsstunden der Festplatten, aus den Festplatten-Controllern ausgelesen. Diese Daten sind auf dem Controller gespeichert und werden in einem einstellbaren Intervall von der Software ausgelesen und in entsprechenden Dateien auf dem Host-System abgelegt. 
+CrystalDiskInfo ist ein nützliches Open-Soruce Programm für die Bewertung und Überwachung von internen als auch externen HDDs und SSDs. Mit Hilfe der S.M.A.R.T. Technologie (Self-Monitoring, Analysis, Reporting Technology) werden detaillierte Daten, wie zum Beispiel Seriennummer, Temperatur, Lese- und Schreibzyklen, Fehlerrate beim Lesen und Schreiben, Speicher und Puffergrößen, als auch die gesamten Betriebsstunden der Festplatten, aus den Festplatten-Controllern ausgelesen. Diese Daten sind auf dem Controller gespeichert und werden in einem einstellbaren Intervall von der Software ausgelesen und in entsprechenden Dateien auf dem Host-System abgelegt. \footnote{Es stellt sich heraus, dass Daten genau dann gespeichert werden, wenn sich etwas am gelesenen Wert ändert. Das heißt, wenn sich zum Beispiel an der Temperatur nach einem Intervall von einer Minute nichts geändert hat, wird auch kein neuer Datenpunkt erstellt.} 
 
 
 Wie und welche dieser Daten angezeigt werden lässt sich einstellen. Beispielsweise lässt sich die Seriennummer ausblenden um auf Screenshots nicht aufzutauchen.
@@ -31,8 +31,18 @@ Wenn man möchte lassen sich auch Farbschemata der Buttons und Anzeigen ändern.
 
 \section{Use-Case-Modell}
 
-anzeigenDatenträgerSMART
-\\anzeigenGraph
+//TODO: Großes UCM
+
+\subsection{anzeigenDatenträgerInformation}
+
+
+\subsection{anzeigenDiagramm}
+
+\subsection{benachrichtigenAdmin}
+
+\subsection{einstellenBenachrichtigung}
+
+\subsection{auswählenDatenträger}
 
 
 
@@ -47,7 +57,10 @@ anzeigenDatenträgerSMART
 
 
 \section{Geforderte Änderungen}
+Die Funktion zur Anzeige eines Diagramms soll so verändert/erweitert werden, sodass ein "Wurm"-Diagramm (eng. Bubble-Diagram) angezeigt wird. Dabei handelt es sich um eine 2D Darstellung von 3D Datenreihen. Dafür werden zwei Datenreihen auf den Kartesischen Koordinaten dargestellt und eine dritte Datenreihe mit der Größe der Punkte beziehungsweise Blasen.
+Zum Beispiel auf der x-Achse Temperatur, auf der y-Achse geschrieben Daten und diese Punkte werden nach vergangener Zeit größer.
 
+Die Anforderung wurde dann nach Absprache mit Herrn Professor Doktor Baar leicht abgeschwächt. Der Grund dafür waren neue Einsichten in das Programm, dessen Aufbau und die Sinnhaftigkeit der Änderung.
 
 
 \section{Modellierung nach den Änderungen}
@@ -56,11 +69,15 @@ anzeigenDatenträgerSMART
 
 
 \section{Beschreibung der Implementierung}
+Um das Bubble-Chart darzustellen wurde, wie im Originalprogramm eine JavaScript Bibliothek genutzt. Es wurde sich allerdings für eine andere, modernere Bibliothek entschieden, da die in CrystalDiskInfo verwendete schon sehr alt war und der Anforderungen ein Bubble-Chart darzustellen nicht erfüllen konnte. Deshalb wurde die JavaScript Bibliothek "ChartsBundle.js" verwendet, welche auch OpenSource auf GitHub.com zur Verfügung steht.
 
+Mithilfe dieser Bibliothek wurde dann eine HTML mit JavaScript erstellt in der alles wichtige und konstante dort eingetragen und getestet. Das funktionale Skript wurde dann in zwei .txt Dateien aufgeteilt. Diese Dateien wurden dann in C++ mit den ausgelesen Daten verknüpft um eine vollständige HTML-Datei mit JavaScript und Daten zu erstellen. Diese Datei enthält bereits das Diagramm. Die erstellte HTML Datei wurde jetzt über den eigentlichen "Diagramm"-Aufruf von CDI (CrystalDiskInfo) in ein Fenster eingebettet.
 
 
 \section{Fazit}
-Nach anfänglichen Schwierigkeiten haben wir CrystalDiskInfo dann auf allen unseren Windows Maschinen 
+Nach anfänglichen Schwierigkeiten haben wir CrystalDiskInfo dann auf allen unseren Windows Maschinen.
+
+
 
 
 

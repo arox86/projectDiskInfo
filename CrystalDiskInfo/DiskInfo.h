@@ -33,6 +33,7 @@
 #define GRAPH_DIALOG				_T("Graph.html")
 #define GRAPH_DIALOG_IE8			_T("Graph8.html")
 #define OPTION_DIALOG				_T("Option.html")
+//#define BUBBLE_DIALOG				_T("Bubble.html")
 
 #ifdef SUISHO_SHIZUKU_SUPPORT
 	#ifdef KUREI_KEI_SUPPORT

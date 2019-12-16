@@ -414,7 +414,19 @@ void CDiskInfoDlg::CreateMainMenu(DWORD index)
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // Auto Refresh
 /////////////////////////////////////////////////////////////////////////////////////////////////
+	
 	subMenuInfo.fType = MFT_RADIOCHECK;
+
+	// bekloppter CHECK Button Radio Button DIngs
+	cstr = _T("1/60") + i18n(_T("Menu"), _T("SECOND"));
+	subMenuInfo.dwTypeData = (LPWSTR)cstr.GetString();
+	subMenuInfo.wID = ID_AUTO_REFRESH_01_SEC;
+	if (m_AutoRefreshStatus == 1/60) { subMenuInfo.fState = MFS_CHECKED; }
+	else { subMenuInfo.fState = MFS_UNCHECKED; }
+	InsertMenuItem(hSubMenu, -1, TRUE, &subMenuInfo);
+
+
+	
 	cstr = _T("1 ") + i18n(_T("Menu"), _T("MINUTE"));
 	subMenuInfo.dwTypeData = (LPWSTR)cstr.GetString();
 	subMenuInfo.wID= ID_AUTO_REFRESH_01_MIN;
