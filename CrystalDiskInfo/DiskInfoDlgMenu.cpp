@@ -101,6 +101,12 @@ void CDiskInfoDlg::OnGraph()
 {
 	ShowGraphDlg(-1);
 }
+/*
+void CDiskInfoDlg::OnBubble()
+{
+	//CBubble....
+	
+}*/
 
 void CDiskInfoDlg::ShowGraphDlg(int index)
 {

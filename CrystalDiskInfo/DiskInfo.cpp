@@ -57,6 +57,8 @@ BOOL CDiskInfoApp::InitInstance()
 {
 	BOOL flagEarthlight = FALSE;
 	BOOL flagStartupExit = FALSE;
+	BOOL flagBubble = FALSE;
+	
 	m_FlagCopyExit = FALSE;
 
 	int defaultDisk = -1;
@@ -112,7 +114,12 @@ BOOL CDiskInfoApp::InitInstance()
 	{
 		CString cstr;
 		cstr = argv[1];
-	
+
+		if(cstr.CompareNoCase(_T("/bubble")) == 0) // prüfe ob /bubble im übergabe string steht
+		{
+			flagBubble = TRUE;
+		}
+		
 		if(cstr.CompareNoCase(_T("/Earthlight")) == 0)
 		{
 			flagEarthlight = TRUE;
@@ -252,6 +259,12 @@ BOOL CDiskInfoApp::InitInstance()
 
 	BOOL flagAfxOleInit = FALSE;
 
+	if (flagBubble)
+	{
+		//CBubbleDlg dlg(NULL);
+		//m_pMainWnd = &dlg;
+	}
+	
 	if(flagEarthlight) //FOUND THE GRAPH
 	{
 		CGraphDlg dlg(NULL, defaultDisk);
