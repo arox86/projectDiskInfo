@@ -120,7 +120,7 @@
     <ClCompile Include="TemperatureDlg.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BubbleChart.cpp">
+    <ClCompile Include="bubbleHtml.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -227,7 +227,7 @@
     <ClInclude Include="TemperatureDlg.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BubbleChart.h">
+    <ClInclude Include="bubbleHtml.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

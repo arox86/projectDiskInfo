@@ -493,6 +493,7 @@ public:
 
 	afx_msg LRESULT OnPlayAlertSound(WPARAM wParam, LPARAM lParam);
 
+	afx_msg void OnBubble();
 	afx_msg void OnGraph();
 	afx_msg void OnHelp();
 	afx_msg void OnCustomize();

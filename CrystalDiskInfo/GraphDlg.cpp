@@ -195,7 +195,7 @@ BOOL CGraphDlg::OnInitDialog()
 	InitThemeLang();
 	InitMenu();
 
-	SetWindowText(_T("CrystalDiskInfo - ") + i18n(_T("WindowTitle"), _T("GRAPH")) + _T(" - Powered by Flot"));
+	SetWindowText(_T("CrystalDiskInfo - ") + i18n(_T("WindowTitle"), _T("GRAPH")) + _T(" - Powered by Flot")); // DEINE MUTTER
 
 	m_IeVersion = GetIeVersion();
 

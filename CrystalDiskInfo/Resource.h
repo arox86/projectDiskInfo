@@ -1,4 +1,4 @@
-﻿//{{NO_DEPENDENCIES}}
+//{{NO_DEPENDENCIES}}
 // Von Microsoft Visual C++ generierte Includedatei.
 // Verwendet durch DiskInfo.rc
 //
@@ -31,6 +31,7 @@
 #define IDD_ALARM_HISTORY               151
 #define IDD_SOUND_SETTINGS              152
 #define IDD_BUBBLE                      174
+#define IDD_DIALOG1                     186
 #define IDI_TEMP_00                     200
 #define IDI_TEMP_BC00                   200
 #define IDI_TEMP_BC01                   201
@@ -740,6 +741,7 @@
 #define IDC_VALUE_TEMPERATURE           1101
 #define IDC_VALUE_TEMPERATURE_F         1102
 #define IDC_SCROLLBAR_TEMPERATURE       1103
+#define IDC_EXPLORER1                   1113
 #define ID_FILE_EXIT                    32771
 #define ID_HELP_ABOUT                   32772
 #define ID_HELP_CRYSTALDEWWORLD         32773
@@ -954,14 +956,15 @@
 #define ID_AUTO_REFRESH_01_SEC          33137
 #define ID_Menu33138                    33138
 #define ID_FUNCTION_CHARTS              33139
+#define ID_BUBBLE                       33140
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        179
-#define _APS_NEXT_COMMAND_VALUE         33140
-#define _APS_NEXT_CONTROL_VALUE         1111
+#define _APS_NEXT_RESOURCE_VALUE        189
+#define _APS_NEXT_COMMAND_VALUE         33141
+#define _APS_NEXT_CONTROL_VALUE         1115
 #define _APS_NEXT_SYMED_VALUE           111
 #endif
 #endif

@@ -14,6 +14,7 @@
 #include "GetOsInfo.h"
 
 #include <mmsystem.h>
+#include <windows.h>
 
 #pragma comment(lib, "winmm.lib")
 
@@ -667,6 +668,7 @@ BEGIN_MESSAGE_MAP(CDiskInfoDlg, CMainDialog)
 	ON_REGISTERED_MESSAGE(gTempIcon62, OnTempIcon62)
 	ON_REGISTERED_MESSAGE(gTempIcon63, OnTempIcon63)
 
+	ON_COMMAND(ID_BUBBLE, &CDiskInfoDlg::OnBubble)
 	ON_COMMAND(ID_GRAPH, &CDiskInfoDlg::OnGraph)
 	ON_COMMAND(ID_HELP, &CDiskInfoDlg::OnHelp)
 	ON_COMMAND(ID_CUSTOMIZE, &CDiskInfoDlg::OnCustomize)
@@ -789,6 +791,15 @@ LRESULT CDiskInfoDlg::OnPlayAlertSound(WPARAM wParam, LPARAM lParam)
 	AlertSound(1000, AS_PLAY_SOUND);
 
 	return 0;
+}
+
+void CDiskInfoDlg::OnBubble()
+{
+	LPCWSTR a = L"open";
+	LPCWSTR b = L"Bubble.html";
+	LPCWSTR c = L"Bubble";
+	ShellExecute(NULL, a, b,
+		NULL, NULL, 0);
 }
 
 // If you add a minimize button to your dialog, you will need the code below
