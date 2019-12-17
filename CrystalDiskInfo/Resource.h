@@ -954,7 +954,7 @@
 #define ID_AUTO_REFRESH_01_SEC          33137
 #define ID_Menu33138                    33138
 #define ID_FUNCTION_CHARTS              33139
-#define ID_BUBBLE                       33140
+#define ID_BUBBLE                       33140 // NEW ID FOR MENU FUNCTION
 
 // Next default values for new objects
 // 

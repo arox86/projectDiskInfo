@@ -401,7 +401,7 @@ public:
 	afx_msg void OnTimer(UINT_PTR nIDEvent);
 	afx_msg void OnHelpAboutSmart();
 	afx_msg void OnAutoRefreshDisable();
-	afx_msg void OnAutoRefresh01Sec();
+	afx_msg void OnAutoRefresh01Sec(); // NEW METHOD FOR 1 SECOND
 	afx_msg void OnAutoRefresh01Min();
 	afx_msg void OnAutoRefresh03Min();
 	afx_msg void OnAutoRefresh05Min();
