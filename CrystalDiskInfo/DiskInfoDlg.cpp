@@ -797,7 +797,7 @@ void CDiskInfoDlg::OnBubble()
 {
 	LPCWSTR a = L"open";
 	LPCWSTR b = L"Bubble.html";
-	LPCWSTR c = L"Bubble";
+	
 	ShellExecute(NULL, a, b,
 		NULL, NULL, 0);
 }
