@@ -3,7 +3,7 @@
 \usepackage[utf8]{inputenc}
 \begin{document}
 \title{ {\huge Software Technik Projekt: CrystalDiskInfo} \\{\large Computer Engineering, Wintersemester 2019/2020}}
-\author{Philipp Horländer, 566045 \\Konrad Münch, XXXXXX \\ \\Dozent: Prof. Dr. Baar}
+\author{Philipp Horländer, 566045 \\Konrad Münch, 565929 \\ \\Dozent: Prof. Dr. Baar}
 \date{Berlin, \today}
 \maketitle
 \newpage
@@ -21,7 +21,7 @@ CrystalDiskInfo ist ein nützliches Open-Soruce Programm für die Bewertung und 
 
 Wie und welche dieser Daten angezeigt werden lässt sich einstellen. Beispielsweise lässt sich die Seriennummer ausblenden um auf Screenshots nicht aufzutauchen.
 
-Auch lassen sich Graphen über ausgewählte, gespeicherte Daten und Datenträger in Abhängigkeit der Zeit anzeigen.
+Auch lässt sich ein Diagramm über ausgewählte, gespeicherte Daten und Datenträger in Abhängigkeit der Zeit anzeigen.
 
 Eine weitere nützliche Funktion für Administratoren ist es sich bei zu hohen Temperaturen oder einer geringen Lebenszeit der Festplatten benachrichtigen zu lassen. Die geschieht mit einen Warnton, als auch via E-Mail.
 
@@ -32,7 +32,8 @@ Wenn man möchte lassen sich auch Farbschemata der Buttons und Anzeigen ändern.
 
 \subsection{Use-Case-Modell}
 
-//TODO: Großes UCM
+
+
 
 \subsubsection{anzeigenDatenträgerInformation}
 1. Das Programm wird startet.\\
@@ -62,11 +63,11 @@ Wenn man möchte lassen sich auch Farbschemata der Buttons und Anzeigen ändern.
 3. Das Programm speichert die Daten und schließt das Fenster.\\
 \\
 2.a Der Nutzer schließt das Fenster.\\
-2.a.1 Das Use-Case endet erfolglos.\\
+2.a.1 Das Use-Case endet erfolglos.
 
 \subsubsection{auswählenDatenträger}
 1. Der Nutzer wählt einen anderen Datenträger aus.\\
-2. Das Programm zeigt die Daten des neu gewählten Datenträgers an.\\
+2. Das Programm zeigt die Daten des gewählten Datenträgers an.\\
 
 \subsection{Domänenmodell}
 // TODO: Klassendiagramm für die Funktionalität die geändert werden soll.
@@ -80,12 +81,15 @@ Wenn man möchte lassen sich auch Farbschemata der Buttons und Anzeigen ändern.
 Die Funktion zur Anzeige eines Diagramms soll so verändert/erweitert werden, sodass ein "Wurm"-Diagramm (eng. Bubble-Diagram) angezeigt wird. Dabei handelt es sich um eine 2D Darstellung von 3D Datenreihen. Dafür werden zwei Datenreihen auf den Kartesischen Koordinaten dargestellt und eine dritte Datenreihe mit der Größe der Punkte beziehungsweise Blasen.
 Zum Beispiel auf der x-Achse Temperatur, auf der y-Achse geschrieben Daten und diese Punkte werden nach vergangener Zeit größer.
 
-Die Anforderung wurde dann nach Absprache mit Herrn Professor Doktor Baar leicht abgeschwächt. Der Grund dafür waren neue Einsichten in das Programm, dessen Aufbau und die Sinnhaftigkeit der Änderung.
+Die Anforderung wurde dann nach Absprache mit Herrn Prof. Dr. Baar leicht abgeschwächt. Der Grund dafür waren neue Einsichten in das Programm, dessen Aufbau und die Sinnhaftigkeit der Änderung.
 
 
 \section{Modellierung nach den Änderungen}
 
 \subsection{Use-Case-Modell}
+Änderungen gab es nur an einem Use-Case.
+\subsubsection{anzeigenDiagramm}
+1. Das Programm generiert eine HTML-Datei und öffnet diese im Browser.
 
 \subsection{Domänenmodell}
 
@@ -101,7 +105,7 @@ Aufruf im Browser geöffnet.
 \section{Fazit}
 Schwierigkeiten traten im gesamten Verlauf zur genüge an. Zuerst war es recht schwer herauszufinden wie CrystalDiskInfo aus dem Source Code funktionsfähig zu bekommen ist. Nötig waren dafür Dateien von der fertigen Installation die dem Source Code nicht beilagen und auch nicht beim Compilieren erstellt wurden. \\
 Als nächstes war es sehr schwer den Code zu verstehen, da es sich bei dem Entwickler von CrystalDiskInfo offensichtlich um einen sehr erfahrenen Programmierer handelt und das Programm entsprechend komplex war. Allerdings ist CrystalDiskInfo sehr spärlich kommentiert. Das machte das verstehen deutlich schwerer. \\
-Die geforderte Änderung umzusetzen erwies sich auch als schwerer als erwartet. 
+Die geforderte Änderung umzusetzen erwies sich als schwerer als erwartet. 
 
 
 
