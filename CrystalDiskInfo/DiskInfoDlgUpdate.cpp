@@ -2256,7 +2256,7 @@ void CDiskInfoDlg::SaveSmartInfo(DWORD i)
 	static CTime preTime[CAtaSmart::MAX_DISK] = { 0 };
 	CTime time = CTime::GetTickCount();
 
-	if (time - preTime[i] < SAVE_SMART_PERIOD) //BUMSFICK
+	if (time - preTime[i] < SAVE_SMART_PERIOD) // Here are the Changes for the refresh time
 	{
 		return;
 	}
