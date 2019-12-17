@@ -4,17 +4,19 @@
 #include <sstream>
 #include <iostream>
 
-#define BUBBLEEXPORT		"CdiResource/bubble/bubblePlot.html"
-#define BUBBLEIMPORT1		"CdiResource/bubble/bubbleScript_1.txt"
-#define BUBBLEIMPORT2		"CdiResource/bubble/bubbleScript_2.txt"
-#define BUBBLESIZE			3
+#define BUBBLE_EXPORT		"../Marginality/CdiResource/bubble/bubblePlot.html"
+#define BUBBLE_IMPORT1		"../Marginality/CdiResource/bubble/bubbleScript_1.txt"
+#define BUBBLE_IMPORT2		"../Marginality/CdiResource/bubble/bubbleScript_2.txt"
+#define BUBBLE_SIZE			3
+#define BUBBLE_DATA_TEMP	"../Marginality/Smart/testData/Temperature.csv"
+#define BUBBLE_DATA_HWRITE	"../Marginality/Smart/testData/HostWrites.csv"
 
 int BubblePlotHandler::makeHTML()
 {
 	std::stringstream	html_data;
 
-	std::vector<std::string> dataX = *getDataFromFile("Smart/testData/Temperature.csv");
-	std::vector<std::string> dataY = *getDataFromFile("Smart/testData/HostWrites.csv");
+	std::vector<std::string> dataX = *getDataFromFile(BUBBLE_DATA_TEMP);
+	std::vector<std::string> dataY = *getDataFromFile(BUBBLE_DATA_HWRITE);
 
 	// format the data
 	for (int i = 1; i <= (((dataX.size()) < (dataY.size())) ? (dataX.size()) : (dataY.size())); i++)
@@ -30,9 +32,9 @@ int BubblePlotHandler::makeHTML()
 	}
 
 	//file read and write stuff for script building
-	std::ofstream		html_script_export(BUBBLEEXPORT, std::ios::trunc);
-	std::ifstream		html_script_import1(BUBBLEIMPORT1, std::ios::in);
-	std::ifstream		html_script_import2(BUBBLEIMPORT2, std::ios::in);
+	std::ofstream		html_script_export(BUBBLE_EXPORT, std::ios::trunc);
+	std::ifstream		html_script_import1(BUBBLE_IMPORT1, std::ios::in);
+	std::ifstream		html_script_import2(BUBBLE_IMPORT2, std::ios::in);
 
 	std::string html_fst_half;
 	// read first half of script

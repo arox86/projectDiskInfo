@@ -20,6 +20,7 @@
 
 #include "locale.h"
 #include <complex>
+#include "BubblePlotHandler.h" //New Class for Project
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -793,11 +794,15 @@ LRESULT CDiskInfoDlg::OnPlayAlertSound(WPARAM wParam, LPARAM lParam)
 	return 0;
 }
 
-void CDiskInfoDlg::OnBubble()
+void CDiskInfoDlg::OnBubble() //Neue Funktion BubbleChart
 {
+
+	BubblePlotHandler BubbleOne;
+	BubbleOne.makeHTML();
+
 	LPCWSTR a = L"open";
-	LPCWSTR b = L"Bubble.html";
-	LPCWSTR c = L"Bubble";
+	LPCWSTR b = L"..\\Marginality\\CdiResource\\bubble\\bubblePlot.html";
+	
 	ShellExecute(NULL, a, b,NULL, NULL, 0);
 }
 
