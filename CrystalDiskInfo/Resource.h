@@ -31,7 +31,6 @@
 #define IDD_ALARM_HISTORY               151
 #define IDD_SOUND_SETTINGS              152
 #define IDD_BUBBLE                      174
-#define IDD_DIALOG1                     186
 #define IDI_TEMP_00                     200
 #define IDI_TEMP_BC00                   200
 #define IDI_TEMP_BC01                   201
@@ -741,7 +740,6 @@
 #define IDC_VALUE_TEMPERATURE           1101
 #define IDC_VALUE_TEMPERATURE_F         1102
 #define IDC_SCROLLBAR_TEMPERATURE       1103
-#define IDC_EXPLORER1                   1113
 #define ID_FILE_EXIT                    32771
 #define ID_HELP_ABOUT                   32772
 #define ID_HELP_CRYSTALDEWWORLD         32773

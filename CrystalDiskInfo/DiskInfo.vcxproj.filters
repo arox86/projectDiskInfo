@@ -120,8 +120,8 @@
     <ClCompile Include="TemperatureDlg.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="bubbleHtml.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="BubblePlotHandler.cpp">
+      <Filter>Library Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -227,7 +227,7 @@
     <ClInclude Include="TemperatureDlg.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="bubbleHtml.h">
+    <ClInclude Include="BubblePlotHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -798,8 +798,7 @@ void CDiskInfoDlg::OnBubble()
 	LPCWSTR a = L"open";
 	LPCWSTR b = L"Bubble.html";
 	LPCWSTR c = L"Bubble";
-	ShellExecute(NULL, a, b,
-		NULL, NULL, 0);
+	ShellExecute(NULL, a, b,NULL, NULL, 0);
 }
 
 // If you add a minimize button to your dialog, you will need the code below

@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Bubble Chart</title>
+	<script src="Chart.bundle.js"></script>
+	<script src="utils.js"></script>
+	<style type="text/css">
+		canvas{
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="container" style="width: 75%;">
+		<canvas id="canvas"></canvas>
+	</div>
+	<script>
+		var DEFAULT_DATASET_SIZE = 7;
+		var addedCount = 0;
+		var color = Chart.helpers.color;
+		var bubbleChartData = {
+			animation: {
+				duration: 10000
+			},
+			datasets: [{
+                label: 'Time',
+				backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+				borderColor: window.chartColors.red,
+				borderWidth: 1,
+                data: [{					
+x: 29,					
+y: 322,					
+r: 7				
+},{					
+x: 30,					
+y: 381,					
+r: 9				
+},{					
+x: 29,					
+y: 388,					
+r: 11				
+}]
+			}]
+		};
+		window.onload = function() {
+			var ctx = document.getElementById('canvas').getContext('2d');
+			window.myChart = new Chart(ctx, {
+				type: 'bubble',
+				data: bubbleChartData,
+                xAxisID: 'bottom',
+                yAxisID: 'left',
+				options: {
+                    scales: {
+                        xAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Temperature in °C'
+                            },
+                            id: 'bottom',
+                            type: 'linear',
+                            position: 'bottom'
+                        }],
+                        yAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Host Writes'
+                            },
+                            id: 'left',
+                            type: 'linear',
+                            position: 'left'
+                        }]
+                    },
+					responsive: true,
+					title: {
+						display: true,
+						text: 'Temperature/Host Writes'
+					},
+					tooltips: {
+						mode: 'point'
+					}
+				}
+			});
+		};
+		var colorNames = Object.keys(window.chartColors);
+	</script>
+</body>
+
+</html>

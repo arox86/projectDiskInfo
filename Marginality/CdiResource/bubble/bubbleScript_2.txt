@@ -1,0 +1,47 @@
+]
+			}]
+		};
+		window.onload = function() {
+			var ctx = document.getElementById('canvas').getContext('2d');
+			window.myChart = new Chart(ctx, {
+				type: 'bubble',
+				data: bubbleChartData,
+                xAxisID: 'bottom',
+                yAxisID: 'left',
+				options: {
+                    scales: {
+                        xAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Temperature in °C'
+                            },
+                            id: 'bottom',
+                            type: 'linear',
+                            position: 'bottom'
+                        }],
+                        yAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Host Writes'
+                            },
+                            id: 'left',
+                            type: 'linear',
+                            position: 'left'
+                        }]
+                    },
+					responsive: true,
+					title: {
+						display: true,
+						text: 'Temperature/Host Writes'
+					},
+					tooltips: {
+						mode: 'point'
+					}
+				}
+			});
+		};
+		var colorNames = Object.keys(window.chartColors);
+	</script>
+</body>
+
+</html>

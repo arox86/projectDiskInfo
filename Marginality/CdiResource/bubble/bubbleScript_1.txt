@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Bubble Chart</title>
+	<script src="Chart.bundle.js"></script>
+	<script src="utils.js"></script>
+	<style type="text/css">
+		canvas{
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="container" style="width: 75%;">
+		<canvas id="canvas"></canvas>
+	</div>
+	<script>
+		var DEFAULT_DATASET_SIZE = 7;
+		var addedCount = 0;
+		var color = Chart.helpers.color;
+		var bubbleChartData = {
+			animation: {
+				duration: 10000
+			},
+			datasets: [{
+                label: 'Time',
+				backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+				borderColor: window.chartColors.red,
+				borderWidth: 1,
+                data: [
