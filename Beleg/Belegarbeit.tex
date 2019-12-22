@@ -31,6 +31,8 @@ Eine weitere nützliche Funktion für Administratoren ist es sich bei zu hohen T
 
 Wenn man möchte lassen sich auch Farbschemata der Buttons und Anzeigen ändern.
 
+\section{Aufbau des Programmes}
+\subsection{Ordner}
 
 \section{Modellierung}
 
@@ -107,20 +109,26 @@ Wenn man möchte lassen sich auch Farbschemata der Buttons und Anzeigen ändern.
 4\textdoublevertline a.2. Das Use-Case endet erfolglos an.
 
 \subsection{Domänenmodell}
-Das hier gezeigte Domänenmodell stellt die Funktion vor der Änderung des Programmes da.
-
-\includegraphics [width=1\textwidth]{"Bilder/DomaenenModell_0"}  \label{fig:gull}
+Das hier gezeigte Domänenmodell stellt die Funktion vor der Änderung des Programmes da. Zur Übersicht wurde nur ein Ausschnitt des gesamten Programmes betrachtet.\\
 
 
-\subsection{Weitere Modelle}
-// TODO: Welche weiteren Modelle sind sinnvoll?
+
+\includegraphics [width=1.1\textwidth]{"Bilder/DomaenenModell_0"}  \label{fig:gull}
+
+
+
 
 
 \section{Geforderte Änderungen}
-Die Funktion zur Anzeige eines Diagramms soll so verändert/erweitert werden, sodass ein "Wurm"-Diagramm (eng. Bubble-Diagram) angezeigt wird. Dabei handelt es sich um eine 2D Darstellung von 3D Datenreihen. Dafür werden zwei Datenreihen auf den Kartesischen Koordinaten dargestellt und eine dritte Datenreihe mit der Größe der Punkte beziehungsweise Blasen.
-Zum Beispiel auf der x-Achse Temperatur, auf der y-Achse geschrieben Daten und diese Punkte werden nach vergangener Zeit größer.
+Die Änderung von CrystalDiskInfo sollte die Darstellung eines neuen Diagrammtyps ermöglichen. Das sogenannte ''Bubble Diagramm'' sollte in die Auswahlfunktion der Diagramme implentiert werden.\\
+Ein ''Bubble Diagramm'' soll die Korrellation von zwei Datenreihen darstellen, in Form von Punkten auf einem Koordinatensystem.
+Diese werden durch eine dritte Abhängigkeit ergänzt welche durch die Größe der Punkte (Radius) dargestellt wird. \\\\
 
-Die Anforderung wurde dann nach Absprache mit Herrn Prof. Dr. Baar leicht abgeschwächt. Der Grund dafür waren neue Einsichten in das Programm, dessen Aufbau und die Sinnhaftigkeit der Änderung.
+Ein besprochene Umsetzungsidee war die Darstellung von Temperatur auf der X-Achse, zu geschriebenen Daten auf der Y-Achse, welche nach einer Zeitperiode ihre Größe verändern. Zudem sollten noch andere Daten mit einander verglichen werden.\\
+Nach Absprache mit dem Dozenten Herrn Prof. Dr. Baar, wurde die Art der Implementierung vereinfacht. Grund hierfür war die Komplexität des Aufbaus der Darstellungsfunktion im Programm. 
+Eine weitere Änderung sollte darin bestehen die Aktualisierungszeit der Datenpunkte auf eine Sekunde hinzuzufügen.
+ 
+ 
 
 
 \section{Modellierung nach den Änderungen}

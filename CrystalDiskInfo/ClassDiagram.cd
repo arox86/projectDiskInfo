@@ -1,35 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="CAboutDlg" Collapsed="true">
-    <Position X="4.5" Y="4.25" Width="2.25" />
-    <NestedTypes>
-      <Enum Name="CAboutDlg::__unnamed_enum_0002_1" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>AboutDlg.h</NewMemberFileName>
-        </TypeIdentifier>
-      </Enum>
-    </NestedTypes>
-    <TypeIdentifier>
-      <HashCode>AACEEBFgAAAAAGFAEBAAgEAQAAAgACAAAAAAhABAIAA=</HashCode>
-      <FileName>AboutDlg.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CDiskInfoApp" Collapsed="true">
-    <Position X="40" Y="1" Width="1.5" />
+  <Class Name="CDiskInfoApp">
+    <Position X="1.5" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAABQAAAAAAFIAACIABAIGAAAEAAAAQAQAADAFAAAAA=</HashCode>
       <FileName>DiskInfo.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CDiskInfoDlg" Collapsed="true">
-    <Position X="10.5" Y="5.75" Width="3.25" />
+    <Position X="7" Y="5" Width="3.25" />
     <NestedTypes>
-      <Enum Name="CDiskInfoDlg::__unnamed_enum_0014_2" Collapsed="true">
+      <Enum Name="CDiskInfoDlg::__unnamed_enum_0016_2" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>DiskInfoDlg.h</NewMemberFileName>
         </TypeIdentifier>
       </Enum>
-      <Enum Name="CDiskInfoDlg::__unnamed_enum_0014_3" Collapsed="true">
+      <Enum Name="CDiskInfoDlg::__unnamed_enum_0016_3" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>DiskInfoDlg.h</NewMemberFileName>
         </TypeIdentifier>
@@ -37,33 +23,19 @@
     </NestedTypes>
     <InheritanceLine Type="CMainDialog" FixedToPoint="true">
       <Path>
-        <Point X="12" Y="4.941" />
-        <Point X="12" Y="5.75" />
+        <Point X="8.5" Y="3.941" />
+        <Point X="8.5" Y="5" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>+lH9dL1KOm//7v/D/fvvvT/T/e/b///B1/9y/+/9HX4=</HashCode>
+      <HashCode>+lH9dL1KOm//7v/D/fvvvT/T/e/b///B1/9y/+/9H34=</HashCode>
       <FileName>DiskInfoDlg.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CFontSelection" Collapsed="true">
-    <Position X="7.5" Y="4.25" Width="2" />
-    <NestedTypes>
-      <Enum Name="CFontSelection::__unnamed_enum_0020_1" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>FontSelection.h</NewMemberFileName>
-        </TypeIdentifier>
-      </Enum>
-    </NestedTypes>
-    <TypeIdentifier>
-      <HashCode>AAQBAAEAAAhAACAAABAAAAAAAAAAAABAAAAGAABAAAE=</HashCode>
-      <FileName>FontSelection.h</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="CGraphDlg" Collapsed="true">
-    <Position X="7" Y="10.25" Width="2" />
+    <Position X="4.5" Y="5" Width="2" />
     <NestedTypes>
-      <Enum Name="CGraphDlg::__unnamed_enum_0026_2" Collapsed="true">
+      <Enum Name="CGraphDlg::__unnamed_enum_0028_2" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>GraphDlg.h</NewMemberFileName>
         </TypeIdentifier>
@@ -71,8 +43,8 @@
     </NestedTypes>
     <InheritanceLine Type="CDHtmlMainDialog" FixedToPoint="true">
       <Path>
-        <Point X="7.875" Y="9.191" />
-        <Point X="7.875" Y="10.25" />
+        <Point X="5.625" Y="3.691" />
+        <Point X="5.625" Y="5" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -80,470 +52,46 @@
       <FileName>GraphDlg.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CHealthDlg" Collapsed="true">
-    <Position X="1.5" Y="4.25" Width="2.25" />
-    <NestedTypes>
-      <Enum Name="CHealthDlg::__unnamed_enum_0028_1" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>HealthDlg.h</NewMemberFileName>
-        </TypeIdentifier>
-      </Enum>
-    </NestedTypes>
-    <TypeIdentifier>
-      <HashCode>GABgAAEEDAAAECIBEBAQCAHAAAAA5AABGAgAEPBgAIA=</HashCode>
-      <FileName>HealthDlg.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="COptionDlg" Collapsed="true">
-    <Position X="2" Y="8.5" Width="1.75" />
-    <NestedTypes>
-      <Enum Name="COptionDlg::__unnamed_enum_0032_1" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>OptionDlg.h</NewMemberFileName>
-        </TypeIdentifier>
-      </Enum>
-    </NestedTypes>
-    <TypeIdentifier>
-      <HashCode>AAAACAEAEIAAgEEAABAAAIAIAAJAAJh/AAAAAABgJAQ=</HashCode>
-      <FileName>OptionDlg.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CTemperatureDlg" Collapsed="true">
-    <Position X="16.5" Y="4.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AABgAAEMMAAAACIBABAAAABAAAEgAABBAAAAECBgAAA=</HashCode>
-      <FileName>TemperatureDlg.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CSoundSettingDlg" Collapsed="true">
-    <Position X="14.25" Y="4.25" Width="1.5" />
-    <NestedTypes>
-      <Enum Name="CSoundSettingDlg::__unnamed_enum_003a_1" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>SoundSettingDlg.h</NewMemberFileName>
-        </TypeIdentifier>
-      </Enum>
-    </NestedTypes>
-    <TypeIdentifier>
-      <HashCode>AAAAQQkAEAAEACAAABAQQAAEAAAAAABAABIAADBAAAA=</HashCode>
-      <FileName>SoundSettingDlg.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CSettingDlg" Collapsed="true">
-    <Position X="18.75" Y="4.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>IoBkBQEEQEwAAiADAJCAEBBAQIABAigxBAABAJhiWRA=</HashCode>
-      <FileName>SettingDlg.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CAtaSmart" Collapsed="true">
-    <Position X="36.5" Y="1" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>9CYAWgFVpwolyeNfEhs42kCZlACIZIMq5mFbvUlWPJM=</HashCode>
-      <FileName>AtaSmart.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CButtonCx" Collapsed="true">
-    <Position X="38.25" Y="1" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>ASILBAfJKhAIACiEBEII0CwyAJECCgECAIQIODJAEAA=</HashCode>
-      <FileName>ButtonCx.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CComboBoxCx" Collapsed="true">
-    <Position X="10.75" Y="7.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAgAAAAIAAAAIAAAAAAAAAAAAAAAAAAAAQAAAAAAAI=</HashCode>
-      <FileName>ComboBoxCx.h</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="CDHtmlDialogEx" Collapsed="true">
-    <Position X="4.75" Y="7.25" Width="1.5" />
+    <Position X="4.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAAACNEEASIANhooNAQBICBKECFAEAREgAggBAAAiA=</HashCode>
       <FileName>DHtmlDialogEx.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CDHtmlMainDialog" Collapsed="true">
-    <Position X="7" Y="8.5" Width="1.75" />
+    <Position X="4.75" Y="3" Width="1.75" />
+    <InheritanceLine Type="CDHtmlDialogEx" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="2.191" />
+        <Point X="5.5" Y="3" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>CACAUSMAAKCBAARFAAAAIACRIEoIAAAAABhDAAAAACA=</HashCode>
       <FileName>DHtmlMainDialog.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CDialogCx" Collapsed="true">
-    <Position X="10.25" Y="2.75" Width="1.5" />
+    <Position X="7.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAYACMgECCAIKkooFqYJAiBKEiEAEABAgAgABoAAhI=</HashCode>
       <FileName>DialogCx.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CDnpService" Collapsed="true">
-    <Position X="36.5" Y="2" Width="1.5" />
-    <NestedTypes>
-      <Class Name="CDnpService::CServiceThread" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>DnpService.h</NewMemberFileName>
-        </TypeIdentifier>
-      </Class>
-    </NestedTypes>
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAQAEgAAAAAAAAIAAAAA=</HashCode>
-      <FileName>DnpService.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CFontComboBox" Collapsed="true">
-    <Position X="10.5" Y="9.25" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAIAAAEAAEEAAAAAAAAABACAIAAAAAAAAAA=</HashCode>
-      <FileName>FontComboBox.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CListCtrlEx" Collapsed="true">
-    <Position X="38.25" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>iACAAAEAJAAAAAAAAAIAAAAYEAAAAJAAUA0gAECAAAI=</HashCode>
-      <FileName>ListCtrlEx.h</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="CMainDialog" Collapsed="true">
-    <Position X="11.25" Y="4.25" Width="1.5" />
+    <Position X="7.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>CBCAUSMAgICBAARFAAAAIACRIEoIAAAAABhCAABAACA=</HashCode>
       <FileName>MainDialog.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CStaticCx" Collapsed="true">
-    <Position X="40" Y="2" Width="1.5" />
+  <Class Name="BubblePlotHandler">
+    <Position X="1" Y="1.5" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>ASILBAfJKhAIACiEBEII0CwygJECCgECAIQMOBJAAAA=</HashCode>
-      <FileName>StaticCX.h</FileName>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>BubblePlotHandler.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Struct Name="_SMART_ATTRIBUTE" Collapsed="true">
-    <Position X="43.25" Y="6.75" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>QBACAAAAAAgAAAAAAAAAAAAAAAAAAECAAAAAAAAAAAA=</HashCode>
-      <FileName>NVMeInterpreter.h</FileName>
-    </TypeIdentifier>
-  </Struct>
-  <Struct Name="_SlotSpeed" Collapsed="true">
-    <Position X="28.25" Y="7.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
-      <FileName>SlotSpeedGetter.h</FileName>
-    </TypeIdentifier>
-  </Struct>
-  <Struct Name="_SlotMaxCurrSpeed" Collapsed="true">
-    <Position X="36" Y="9.25" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>gAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SlotSpeedGetter.h</FileName>
-    </TypeIdentifier>
-  </Struct>
-  <Struct Name="_OSSlotSpeed" Collapsed="true">
-    <Position X="32.75" Y="11.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
-      <FileName>SlotSpeedGetter.h</FileName>
-    </TypeIdentifier>
-  </Struct>
-  <Struct Name="_OSSlotMaxCurrSpeed" Collapsed="true">
-    <Position X="31.75" Y="2.75" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>gAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SlotSpeedGetter.h</FileName>
-    </TypeIdentifier>
-  </Struct>
-  <Struct Name="_VOLUME_DISK_EXTENTS_LX" Collapsed="true">
-    <Position X="35.75" Y="15.25" Width="2.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAIAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>AtaSmart.h</FileName>
-    </TypeIdentifier>
-  </Struct>
-  <Struct Name="_SCSI_PASS_THROUGH" Collapsed="true">
-    <Position X="29.25" Y="15.5" Width="2" />
-    <TypeIdentifier>
-      <HashCode>gAgEQAAAgAAAAAAAAAAAIAJAAAAAQAAAQAAAAAABEEA=</HashCode>
-      <FileName>SPTIUtil.h</FileName>
-    </TypeIdentifier>
-  </Struct>
-  <Struct Name="_SCSI_PASS_THROUGH_WITH_BUFFERS" Collapsed="true">
-    <Position X="23" Y="12" Width="2.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAQAAAAAAAAgAAAAIA=</HashCode>
-      <FileName>SPTIUtil.h</FileName>
-    </TypeIdentifier>
-  </Struct>
-  <Struct Name="_SCSI_PASS_THROUGH_WITH_BUFFERS24" Collapsed="true">
-    <Position X="22.25" Y="4.5" Width="3" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAgAAAAIA=</HashCode>
-      <FileName>SPTIUtil.h</FileName>
-    </TypeIdentifier>
-  </Struct>
-  <Struct Name="StorageQuery::__unnamed_struct_0040_3" Collapsed="true">
-    <Position X="23.5" Y="17.25" Width="2" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
-      <FileName>StorageQuery.h</FileName>
-    </TypeIdentifier>
-  </Struct>
-  <Struct Name="StorageQuery::__unnamed_struct_0040_5" Collapsed="true">
-    <Position X="28.5" Y="9.75" Width="2.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAICAAoAAAAAAAAAAIAAAAAAAAAABAAgAAQAAAA=</HashCode>
-      <FileName>StorageQuery.h</FileName>
-    </TypeIdentifier>
-  </Struct>
-  <Struct Name="StorageQuery::__unnamed_struct_0040_7" Collapsed="true">
-    <Position X="35.75" Y="5.25" Width="2" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAgAAAAAAAAAQAA=</HashCode>
-      <FileName>StorageQuery.h</FileName>
-    </TypeIdentifier>
-  </Struct>
-  <Typedef Name="SMART_ATTRIBUTE" Collapsed="true">
-    <Position X="42.75" Y="5" Width="3" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>NVMeInterpreter.h</FileName>
-    </TypeIdentifier>
-    <AliasOfLine Type="_SMART_ATTRIBUTE" FixedFromPoint="true">
-      <Path>
-        <Point X="44.188" Y="6.75" />
-        <Point X="44.188" Y="5.937" />
-        <Point X="44.25" Y="5.937" />
-        <Point X="44.25" Y="5.562" />
-      </Path>
-    </AliasOfLine>
-  </Typedef>
-  <Typedef Name="SMART_ATTRIBUTE_LIST" Collapsed="true">
-    <Position X="42" Y="3.75" Width="4.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>NVMeInterpreter.h</FileName>
-    </TypeIdentifier>
-  </Typedef>
-  <Typedef Name="PCIeSpecification" Collapsed="true">
-    <Position X="41" Y="12" Width="2.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SlotSpeedGetter.h</FileName>
-    </TypeIdentifier>
-  </Typedef>
-  <Typedef Name="PCIeDataWidth" Collapsed="true">
-    <Position X="31.5" Y="6" Width="2.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SlotSpeedGetter.h</FileName>
-    </TypeIdentifier>
-  </Typedef>
-  <Typedef Name="SlotSpeed" Collapsed="true">
-    <Position X="28.25" Y="6" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SlotSpeedGetter.h</FileName>
-    </TypeIdentifier>
-  </Typedef>
-  <Typedef Name="SlotMaxCurrSpeed" Collapsed="true">
-    <Position X="35.5" Y="11.75" Width="3" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SlotSpeedGetter.h</FileName>
-    </TypeIdentifier>
-  </Typedef>
-  <Typedef Name="OSSlotSpeed" Collapsed="true">
-    <Position X="32.5" Y="10" Width="2.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SlotSpeedGetter.h</FileName>
-    </TypeIdentifier>
-  </Typedef>
-  <Typedef Name="OSSlotMaxCurrSpeed" Collapsed="true">
-    <Position X="31" Y="4" Width="3.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SlotSpeedGetter.h</FileName>
-    </TypeIdentifier>
-  </Typedef>
-  <Typedef Name="VOLUME_DISK_EXTENTS_LX" Collapsed="true">
-    <Position X="35" Y="17" Width="4" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>AtaSmart.h</FileName>
-    </TypeIdentifier>
-  </Typedef>
-  <Typedef Name="PVOLUME_DISK_EXTENTS_LX" Collapsed="true">
-    <Position X="34.75" Y="13.75" Width="4.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>AtaSmart.h</FileName>
-    </TypeIdentifier>
-  </Typedef>
-  <Typedef Name="SCSI_PASS_THROUGH" Collapsed="true">
-    <Position X="28.75" Y="17.25" Width="3.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SPTIUtil.h</FileName>
-    </TypeIdentifier>
-  </Typedef>
-  <Typedef Name="PSCSI_PASS_THROUGH" Collapsed="true">
-    <Position X="28.25" Y="14" Width="3.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SPTIUtil.h</FileName>
-    </TypeIdentifier>
-  </Typedef>
-  <Typedef Name="SCSI_PASS_THROUGH_WITH_BUFFERS" Collapsed="true">
-    <Position X="21.25" Y="14" Width="5.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SPTIUtil.h</FileName>
-    </TypeIdentifier>
-  </Typedef>
-  <Typedef Name="PSCSI_PASS_THROUGH_WITH_BUFFERS" Collapsed="true">
-    <Position X="21" Y="10" Width="5.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SPTIUtil.h</FileName>
-    </TypeIdentifier>
-  </Typedef>
-  <Typedef Name="SCSI_PASS_THROUGH_WITH_BUFFERS24" Collapsed="true">
-    <Position X="21" Y="6" Width="5.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SPTIUtil.h</FileName>
-    </TypeIdentifier>
-  </Typedef>
-  <Typedef Name="PSCSI_PASS_THROUGH_WITH_BUFFERS24" Collapsed="true">
-    <Position X="20.75" Y="3" Width="5.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SPTIUtil.h</FileName>
-    </TypeIdentifier>
-    <AliasOfLine Type="_SCSI_PASS_THROUGH_WITH_BUFFERS24" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="23.688" Y="4.5" />
-        <Point X="23.688" Y="3.937" />
-        <Point X="23.75" Y="3.937" />
-        <Point X="23.75" Y="3.562" />
-      </Path>
-    </AliasOfLine>
-  </Typedef>
-  <Typedef Name="StorageQuery::TStoragePropertyId" Collapsed="true">
-    <Position X="40.25" Y="15" Width="3.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>StorageQuery.h</FileName>
-    </TypeIdentifier>
-  </Typedef>
-  <Typedef Name="StorageQuery::TStorageQueryType" Collapsed="true">
-    <Position X="43" Y="9.75" Width="3.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>StorageQuery.h</FileName>
-    </TypeIdentifier>
-  </Typedef>
-  <Typedef Name="StorageQuery::TStoragePropertyQuery" Collapsed="true">
-    <Position X="22.5" Y="15.25" Width="3.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>StorageQuery.h</FileName>
-    </TypeIdentifier>
-  </Typedef>
-  <Typedef Name="StorageQuery::TStroageProtocolType" Collapsed="true">
-    <Position X="26.5" Y="4.5" Width="3.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>StorageQuery.h</FileName>
-    </TypeIdentifier>
-    <AliasOfLine Type="StorageQuery::__unnamed_enum_0040_4" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="28.5" Y="3.562" />
-        <Point X="28.5" Y="4.125" />
-        <Point X="28.25" Y="4.125" />
-        <Point X="28.25" Y="4.5" />
-      </Path>
-    </AliasOfLine>
-  </Typedef>
-  <Typedef Name="StorageQuery::TStorageProtocolSpecificData" Collapsed="true">
-    <Position X="27.5" Y="10.75" Width="4" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>StorageQuery.h</FileName>
-    </TypeIdentifier>
-  </Typedef>
-  <Typedef Name="StorageQuery::TStorageProtocolNVMeDataType" Collapsed="true">
-    <Position X="21.75" Y="8.5" Width="4.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>StorageQuery.h</FileName>
-    </TypeIdentifier>
-  </Typedef>
-  <Typedef Name="StorageQuery::TStorageQueryWithBuffer" Collapsed="true">
-    <Position X="35" Y="7.75" Width="3.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>StorageQuery.h</FileName>
-    </TypeIdentifier>
-  </Typedef>
-  <Enum Name="__unnamed_enum_0014_1" Collapsed="true">
-    <Position X="36.5" Y="3.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAABAAAAAAAAIAAAAAAABABAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>DiskInfoDlg.h</FileName>
-    </TypeIdentifier>
-  </Enum>
-  <Enum Name="__unnamed_enum_0026_1" Collapsed="true">
-    <Position X="38.25" Y="3.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAgAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>GraphDlg.h</FileName>
-    </TypeIdentifier>
-  </Enum>
-  <Enum Name="_PCIeSpecification" Collapsed="true">
-    <Position X="41" Y="13.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAIAAAAAAAEAAAAAA=</HashCode>
-      <FileName>SlotSpeedGetter.h</FileName>
-    </TypeIdentifier>
-  </Enum>
-  <Enum Name="_PCIeDataWidth" Collapsed="true">
-    <Position X="32" Y="7.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAQAQAAAAAAAAAAAAA=</HashCode>
-      <FileName>SlotSpeedGetter.h</FileName>
-    </TypeIdentifier>
-  </Enum>
-  <Enum Name="StorageQuery::__unnamed_enum_0040_1" Collapsed="true">
-    <Position X="40.75" Y="16.75" Width="3" />
-    <TypeIdentifier>
-      <HashCode>AQACACKIBAAAQAKAhAQAAAABAAEhAACAAABAABABYhA=</HashCode>
-      <FileName>StorageQuery.h</FileName>
-    </TypeIdentifier>
-  </Enum>
-  <Enum Name="StorageQuery::__unnamed_enum_0040_2" Collapsed="true">
-    <Position X="43.25" Y="8.25" Width="2" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAQACAAA=</HashCode>
-      <FileName>StorageQuery.h</FileName>
-    </TypeIdentifier>
-  </Enum>
-  <Enum Name="StorageQuery::__unnamed_enum_0040_4" Collapsed="true">
-    <Position X="27.5" Y="3" Width="2" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAIAAAEAAAAQAABAAAACQAAEAAAAA=</HashCode>
-      <FileName>StorageQuery.h</FileName>
-    </TypeIdentifier>
-  </Enum>
-  <Enum Name="StorageQuery::__unnamed_enum_0040_6" Collapsed="true">
-    <Position X="22.75" Y="7.5" Width="2" />
-    <TypeIdentifier>
-      <HashCode>BAAIAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
-      <FileName>StorageQuery.h</FileName>
-    </TypeIdentifier>
-  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
