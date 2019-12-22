@@ -1,6 +1,9 @@
 \documentclass[german,10pt]{article}
 \usepackage{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{ textcomp }
+\usepackage{ tipa }
 \begin{document}
 \title{ {\huge Software Technik Projekt: CrystalDiskInfo} \\{\large Computer Engineering, Wintersemester 2019/2020}}
 \author{Philipp Horländer, 566045 \\Konrad Münch, 565929 \\ \\Dozent: Prof. Dr. Baar}
@@ -13,10 +16,11 @@
 
 \section{Einführung}
 \subsection{Aufgabenstellung}
-Es gilt sich eine Open Source Software auszusuchen und diese zu "Reverse-Engineeren" und abzuändern. Dafür sollen verschiedenen Modelle der Software angefertigt werden, wie Use-Case-, Domänen- und ggf. weitere Modelle. Das ganze soll mit einer Belegarbeit dokumentiert werden.
+Es gilt sich eine Open Source Software auszusuchen und diese zu ''Reverse-Engineeren'' und abzuändern. Dafür sollen verschiedenen Modelle der Software angefertigt werden, wie Use-Case-, Domänen- und ggf. weitere Modelle. Das ganze soll mit einer Belegarbeit dokumentiert werden.
 
 \subsection{Beschreibung der Software}
-CrystalDiskInfo ist ein nützliches Open-Soruce Programm für die Bewertung und Überwachung von internen als auch externen HDDs und SSDs. Mit Hilfe der S.M.A.R.T. Technologie (Self-Monitoring, Analysis, Reporting Technology) werden detaillierte Daten, wie zum Beispiel Seriennummer, Temperatur, Lese- und Schreibzyklen, Fehlerrate beim Lesen und Schreiben, Speicher und Puffergrößen, als auch die gesamten Betriebsstunden der Festplatten, aus den Festplatten-Controllern ausgelesen. Diese Daten sind auf dem Controller gespeichert und werden in einem einstellbaren Intervall von der Software ausgelesen und in entsprechenden Dateien auf dem Host-System abgelegt. \footnote{Es stellt sich heraus, dass Daten genau dann gespeichert werden, wenn sich etwas am gelesenen Wert ändert. Das heißt, wenn sich zum Beispiel an der Temperatur nach einem Intervall von einer Minute nichts geändert hat, wird auch kein neuer Datenpunkt erstellt.} 
+''CrystalDiskInfo'' ist ein nützliches Open-Soruce Programm, für die Bewertung und Überwachung von internen als auch externen HDDs und SSDs. Mit Hilfe der S.M.A.R.T. - Technologie (Self-Monitoring, Analysis, Reporting Technology) werden detaillierte Daten, wie zum Beispiel Seriennummer, Temperatur, Lese- und Schreibzyklen, Fehlerrate beim Lesen und Schreiben, Speicher und Puffergrößen, als auch die gesamten Betriebsstunden der Festplatten, aus den Festplatten-Controllern ausgelesen. 
+Diese sind auf dem Controller-Chip gespeichert und werden in einem einstellbaren Intervall von der Software ausgelesen.Die entsprechenden Daten werden auf dem jeweiligen Host-System in Form von CSV-Dateien abgelegt. \footnote{Es stellt sich heraus, dass Daten genau dann gespeichert werden, wenn sich etwas am gelesenen Wert ändert. Das heißt, wenn sich zum Beispiel an der Temperatur nach einem Intervall von einer Minute nichts geändert hat, wird auch kein neuer Datenpunkt erstellt.} 
 
 
 Wie und welche dieser Daten angezeigt werden lässt sich einstellen. Beispielsweise lässt sich die Seriennummer ausblenden um auf Screenshots nicht aufzutauchen.
@@ -34,43 +38,78 @@ Wenn man möchte lassen sich auch Farbschemata der Buttons und Anzeigen ändern.
 
 
 
+\includegraphics [width=1\textwidth]{"Bilder/UseCase1"}  \label{fig:gull}
+
+
+
+
 
 \subsubsection{anzeigenDatenträgerInformation}
-1. Das Programm wird startet.\\
-2. Das Programm erfragt die am System angeschlossene Festplatten.\\
-3. Das System gibt die angefragten Daten an das Programm weiter.\\
-4. Das Programm fragt mit SMART die Daten jedes Festplatten Controllers an.\\
-5. Die Controller geben die Daten an das Programm weiter.\\
-6. Das Programm stellt die Daten lesbar dar.\\
+1. Das Programm ermittelt die verbauten Festplatten.\\
+2. Das Programm liest SMART-Daten jedes Festplatten-Controllers aus.\\ 
+3. Das Programm zeigt die ermittelten Werte im GUI  an. \\ 
 
-\subsubsection{anzeigenDiagramm}
-1. Das Programm öffnet ein neues Fenster.\\
-2. Das Programm zeigt einen Graph über eine Standarddatenreihe an.
-\\\\
-2.a Der Nutzer wählt eine andere Datenreihe aus.\\
-2.a.1. Das Programm zeigt die andere Datenreihe an.
-\\\\
-2.b Der Nutzer wählt Festplatten an/ab.\\
-2.b.1. Das Programm zeigt die gewählten Festplatten-Datenreihen an.\\
+\subsubsection{einstellenRateAktualisierung}
+1. Der Nutzer wählt ein Zeitintervall\\
+2. Das Programm liest und speichert die Werte im gewählten Intervall.\\
 
-\subsubsection{benachrichtigenAdmin}
-1. Das Programm stellt einen kritischen Wert von Temperatur oder Lebensdauer einer Festplatte fest.\\
-2. Das Programm erstellt eine E-Mail und versendet diese an die eingestellte Adresse.
+
+\subsubsection{anzeigenGraph}
+1. Der Nutzer wählt die Funktion Graph anzeigen.\\
+2. Das Programm öffnet ein neues Fenster.\\
+3. Das Programm zeigt einen Graph mit aus Datenreihen an.
+\\\\
+2a. Der Nutzer wählt eine andere Datenreihe aus.\\
+2a.1. Das Programm zeigt die andere Datenreihe an.
+\\\\
+2b. Der Nutzer wählt Festplatten an/ab.\\
+2b.1. Das Programm zeigt die gewählten Festplatten-Datenreihen an.\\
 
 \subsubsection{einstellenBenachrichtigung}
-1. Das Programm zeigt ein Fenster an mit Feldern für die nötigen Daten.\\
-2. Der Nutzer trägt die nötigen Daten ein und wählt speichern aus.\\
-3. Das Programm speichert die Daten und schließt das Fenster.\\
-\\
-2.a Der Nutzer schließt das Fenster.\\
-2.a.1 Das Use-Case endet erfolglos.
+1. Der Nutzer wählt einstellen einer Benachrichtigung aus.\\
+2. Das Programm wartet Eingabe der benötigten Daten des Benutzers.\\
+3. Der Nutzer gibt nötigen Daten ein und bestätigt.
 
-\subsubsection{auswählenDatenträger}
-1. Der Nutzer wählt einen anderen Datenträger aus.\\
-2. Das Programm zeigt die Daten des gewählten Datenträgers an.\\
+
+
+\subsubsection{benachrichtigenNutzer}
+1. Das Programm stellt einen kritischen Wert von Temperatur oder Lebensdauer einer Festplatte fest.\\
+2. Das Programm erstellt eine E-Mail und versendet diese an die eingestellte Adresse.
+\\\\
+2a Der Nutzer schließt das Fenster.\\
+2a.1 Das Use-Case endet erfolglos.
+
+\subsubsection{auswahlTheme}
+1. Der Nutzer wählt Theme ändern aus.\\
+2. Das Programm zeigt dem Nutzer eine Auswahl an.\\
+3. Der Nutzer wählt zwischen Verschiedenen Farbdarstellungen.\\
+4. Das Programm lädt die ausgewählte Darstellung.
+\\\\
+(2-3)a Der Nutzer bricht die Auswahl ab.\\
+(2-3)a.1 Das Use-Case endet erfolglos.
+\\\\
+4\textdoublevertline a. Das Programm stellt fest das benötigte Dateien fehlen:\\
+4\textdoublevertline a.1. Das Programm zeigt eine Fehlermeldung an.\\
+4\textdoublevertline a.2. Das Use-Case endet erfolglos an.
+
+
+\subsubsection{auswahlSprache}
+1. Der Nutzer wählt Sprache ändern aus.\\
+2. Das Programm zeigt dem Nutzer eine Auswahl an.\\
+3. Der Nutzer wählt zwischen Verschiedenen Sprachen.\\
+4. Das Programm lädt die ausgewählte Sprache.
+\\\\
+(2-3)a Der Nutzer bricht die Auswahl ab.\\
+(2-3)a.1 Das Use-Case endet erfolglos.
+\\\\
+4\textdoublevertline a. Das Programm stellt fest das benötigte Dateien fehlen:\\
+4\textdoublevertline a.1. Das Programm zeigt eine Fehlermeldung an.\\
+4\textdoublevertline a.2. Das Use-Case endet erfolglos an.
 
 \subsection{Domänenmodell}
-// TODO: Klassendiagramm für die Funktionalität die geändert werden soll.
+Das hier gezeigte Domänenmodell stellt die Funktion vor der Änderung des Programmes da.
+
+\includegraphics [width=1\textwidth]{"Bilder/DomaenenModell_0"}  \label{fig:gull}
 
 
 \subsection{Weitere Modelle}

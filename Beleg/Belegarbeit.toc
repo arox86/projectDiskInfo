@@ -1,21 +1,23 @@
 \babel@toc {german}{}
-\contentsline {section}{\numberline {1}Einf\IeC {\"u}hrung}{3}% 
-\contentsline {subsection}{\numberline {1.1}Aufgabenstellung}{3}% 
-\contentsline {subsection}{\numberline {1.2}Beschreibung der Software}{3}% 
-\contentsline {section}{\numberline {2}Modellierung}{3}% 
-\contentsline {subsection}{\numberline {2.1}Use-Case-Modell}{3}% 
-\contentsline {subsubsection}{\numberline {2.1.1}anzeigenDatentr\IeC {\"a}gerInformation}{3}% 
-\contentsline {subsubsection}{\numberline {2.1.2}anzeigenDiagramm}{4}% 
-\contentsline {subsubsection}{\numberline {2.1.3}benachrichtigenAdmin}{4}% 
-\contentsline {subsubsection}{\numberline {2.1.4}einstellenBenachrichtigung}{4}% 
-\contentsline {subsubsection}{\numberline {2.1.5}ausw\IeC {\"a}hlenDatentr\IeC {\"a}ger}{4}% 
-\contentsline {subsection}{\numberline {2.2}Dom\IeC {\"a}nenmodell}{4}% 
-\contentsline {subsection}{\numberline {2.3}Weitere Modelle}{4}% 
-\contentsline {section}{\numberline {3}Geforderte \IeC {\"A}nderungen}{5}% 
-\contentsline {section}{\numberline {4}Modellierung nach den \IeC {\"A}nderungen}{5}% 
-\contentsline {subsection}{\numberline {4.1}Use-Case-Modell}{5}% 
-\contentsline {subsubsection}{\numberline {4.1.1}anzeigenDiagramm}{5}% 
-\contentsline {subsection}{\numberline {4.2}Dom\IeC {\"a}nenmodell}{5}% 
-\contentsline {subsection}{\numberline {4.3}Weitere Modelle}{5}% 
-\contentsline {section}{\numberline {5}Beschreibung der Implementierung}{5}% 
-\contentsline {section}{\numberline {6}Fazit}{6}% 
+\contentsline {section}{\numberline {1}Einführung}{3}%
+\contentsline {subsection}{\numberline {1.1}Aufgabenstellung}{3}%
+\contentsline {subsection}{\numberline {1.2}Beschreibung der Software}{3}%
+\contentsline {section}{\numberline {2}Modellierung}{4}%
+\contentsline {subsection}{\numberline {2.1}Use-Case-Modell}{4}%
+\contentsline {subsubsection}{\numberline {2.1.1}anzeigenDatenträgerInformation}{4}%
+\contentsline {subsubsection}{\numberline {2.1.2}einstellenRateAktualisierung}{4}%
+\contentsline {subsubsection}{\numberline {2.1.3}anzeigenGraph}{4}%
+\contentsline {subsubsection}{\numberline {2.1.4}einstellenBenachrichtigung}{5}%
+\contentsline {subsubsection}{\numberline {2.1.5}benachrichtigenNutzer}{5}%
+\contentsline {subsubsection}{\numberline {2.1.6}auswahlTheme}{5}%
+\contentsline {subsubsection}{\numberline {2.1.7}auswahlSprache}{5}%
+\contentsline {subsection}{\numberline {2.2}Domänenmodell}{6}%
+\contentsline {subsection}{\numberline {2.3}Weitere Modelle}{6}%
+\contentsline {section}{\numberline {3}Geforderte Änderungen}{6}%
+\contentsline {section}{\numberline {4}Modellierung nach den Änderungen}{6}%
+\contentsline {subsection}{\numberline {4.1}Use-Case-Modell}{6}%
+\contentsline {subsubsection}{\numberline {4.1.1}anzeigenDiagramm}{6}%
+\contentsline {subsection}{\numberline {4.2}Domänenmodell}{7}%
+\contentsline {subsection}{\numberline {4.3}Weitere Modelle}{7}%
+\contentsline {section}{\numberline {5}Beschreibung der Implementierung}{7}%
+\contentsline {section}{\numberline {6}Fazit}{7}%
