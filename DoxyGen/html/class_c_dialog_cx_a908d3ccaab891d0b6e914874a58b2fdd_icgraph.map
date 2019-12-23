@@ -1,9 +1,0 @@
-<map id="CDialogCx::DoDataExchange" name="CDialogCx::DoDataExchange">
-<area shape="rect" id="node1" title=" " alt="" coords="284,148,476,175"/>
-<area shape="rect" id="node2" href="$class_c_health_dlg.html#a98d37408d5b577218c40054c13058fa6" title=" " alt="" coords="23,5,219,32"/>
-<area shape="rect" id="node3" href="$class_c_sound_setting_dlg.html#ad7923256503f760a4de8ab55f17e9db0" title=" " alt="" coords="31,57,210,98"/>
-<area shape="rect" id="node4" href="$class_c_temperature_dlg.html#a5b3ff68386402eb44d3f7a7af014b775" title=" " alt="" coords="5,123,236,149"/>
-<area shape="rect" id="node5" href="$class_c_about_dlg.html#ab83db7484fec957282d7d5a21aed4df4" title=" " alt="" coords="24,173,217,200"/>
-<area shape="rect" id="node6" href="$class_c_setting_dlg.html#af93250e95890a962916570003bdaa941" title=" " alt="" coords="21,224,221,251"/>
-<area shape="rect" id="node7" href="$class_c_disk_info_dlg.html#a4097d5679b47851a92515972bc09bcb8" title=" " alt="" coords="18,275,223,301"/>
-</map>

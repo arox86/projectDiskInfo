@@ -20,7 +20,7 @@ Es gilt sich eine Open Source Software auszusuchen und diese zu ''Reverse-Engine
 
 \subsection{Beschreibung der Software}
 ''CrystalDiskInfo'' ist ein nützliches Open-Soruce Programm, für die Bewertung und Überwachung von internen als auch externen HDDs und SSDs. Mit Hilfe der S.M.A.R.T. - Technologie (Self-Monitoring, Analysis, Reporting Technology) werden detaillierte Daten, wie zum Beispiel Seriennummer, Temperatur, Lese- und Schreibzyklen, Fehlerrate beim Lesen und Schreiben, Speicher und Puffergrößen, als auch die gesamten Betriebsstunden der Festplatten, aus den Festplatten-Controllern ausgelesen. 
-Diese sind auf dem Controller-Chip gespeichert und werden in einem einstellbaren Intervall von der Software ausgelesen.Die entsprechenden Daten werden auf dem jeweiligen Host-System in Form von CSV-Dateien abgelegt. \footnote{Es stellt sich heraus, dass Daten genau dann gespeichert werden, wenn sich etwas am gelesenen Wert ändert. Das heißt, wenn sich zum Beispiel an der Temperatur nach einem Intervall von einer Minute nichts geändert hat, wird auch kein neuer Datenpunkt erstellt.} 
+Diese sind auf dem Controller-Chip gespeichert und werden in einem einstellbaren Intervall von der Software ausgelesen.Die entsprechenden Daten werden auf dem jeweiligen Host-System in Form von CSV-Dateien abgelegt. 
 
 
 Wie und welche dieser Daten angezeigt werden lässt sich einstellen. Beispielsweise lässt sich die Seriennummer ausblenden um auf Screenshots nicht aufzutauchen.
@@ -32,7 +32,12 @@ Eine weitere nützliche Funktion für Administratoren ist es sich bei zu hohen T
 Wenn man möchte lassen sich auch Farbschemata der Buttons und Anzeigen ändern.
 
 \section{Aufbau des Programmes}
-\subsection{Ordner}
+\subsection{Programmiersprache(n)}
+
+Crystal Disk Info wurde von Noriyuki Miyazaki in der Sprache C++ für Microsoft Windows Betriebssysteme programmiert.
+Zur Darstellung der grafischen Benutzeroberfläche wurde die Microsoft Foundation Classes kurz MFC\footnote{MFC ist eine von Microsoft seit 1992 entwickelte Bibliothek zur Erstellung von Windows Desktop Anwendungen.} verwendent. Des Weiteren wurde für die Realisierung, der Darstellung der Graphen die JAVA -Bibliothek ''FLOT''  verwendet. Zudem werden noch Teile von HTML genutzt welche zur Darstellung der Graphen genutzt werden.
+
+
 
 \section{Modellierung}
 
@@ -146,7 +151,7 @@ Eine weitere Änderung sollte darin bestehen die Aktualisierungszeit der Datenpu
 \section{Beschreibung der Implementierung}
 Um das Bubble-Chart darzustellen wurde, wie im Originalprogramm eine JavaScript Bibliothek genutzt. Es wurde sich allerdings für eine andere, modernere Bibliothek entschieden, da die in CrystalDiskInfo verwendete schon sehr alt war und der Anforderungen ein Bubble-Chart darzustellen nicht erfüllen konnte. Deshalb wurde die JavaScript Bibliothek ChartsBundle.js  verwendet, welche auch OpenSource auf GitHub.com zur Verfügung steht.
 
-Mithilfe dieser Bibliothek wurde dann eine HTML mit JavaScript erstellt. Um die Verarbeitung in C++ zu vereinfachen wurde das Skript in zwei Teile geteilt und in Text-Dateien abgelegt. Diese Dateien wurden dann in C++ mit den ausgelesen Daten zu einer fertigen HMTL/JS-Datei verknüpft und gespeichert. Die erstellte HTML Datei wird nun über einen MFC\footnote{MFC ist eine von Microsoft seit 1992 entwickelte Bibliothek zur Erstellung von Windows Desktop Anwendungen.}
+Mithilfe dieser Bibliothek wurde dann eine HTML mit JavaScript erstellt. Um die Verarbeitung in C++ zu vereinfachen wurde das Skript in zwei Teile geteilt und in Text-Dateien abgelegt. Diese Dateien wurden dann in C++ mit den ausgelesen Daten zu einer fertigen HMTL/JS-Datei verknüpft und gespeichert. Die erstellte HTML Datei wird nun über einen 
 Aufruf im Browser geöffnet.
 
 \section{Fazit}

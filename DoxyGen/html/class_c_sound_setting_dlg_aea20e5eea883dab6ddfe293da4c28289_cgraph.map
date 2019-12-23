@@ -1,7 +1,0 @@
-<map id="CSoundSettingDlg::OnInitDialog" name="CSoundSettingDlg::OnInitDialog">
-<area shape="rect" id="node1" title=" " alt="" coords="5,49,176,90"/>
-<area shape="rect" id="node2" href="$class_c_dialog_cx.html#af28031ce28cca29e14826b1c57b9a631" title=" " alt="" coords="255,5,370,32"/>
-<area shape="rect" id="node3" href="$class_c_dialog_cx.html#a836135f48f1ba1d99a92cf03dc91b1c8" title=" " alt="" coords="232,56,393,83"/>
-<area shape="rect" id="node5" href="$class_c_sound_setting_dlg.html#a8fc509d9e6ec9f10e68b93fabc4979d3" title=" " alt="" coords="224,107,401,149"/>
-<area shape="rect" id="node4" href="$class_c_dialog_cx.html#a3f4b5f5ebabeaae0ae12d2da5bcea4a1" title=" " alt="" coords="449,56,625,83"/>
-</map>

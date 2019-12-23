@@ -1,7 +1,0 @@
-<map id="CDiskInfoDlg::AddTemperatureIcon" name="CDiskInfoDlg::AddTemperatureIcon">
-<area shape="rect" id="node1" title=" " alt="" coords="5,56,228,83"/>
-<area shape="rect" id="node2" href="$class_c_main_dialog.html#a5ba21e29b556ee1eed9fe01f978f1b73" title=" " alt="" coords="281,5,460,32"/>
-<area shape="rect" id="node3" href="$class_c_disk_info_dlg.html#a4956f0e7d727988de0a0d40b5da28886" title=" " alt="" coords="276,56,465,83"/>
-<area shape="rect" id="node5" href="$class_c_disk_info_dlg.html#a5f14c09717b29bf3b45693d5be7157d1" title=" " alt="" coords="287,107,454,149"/>
-<area shape="rect" id="node4" href="$class_c_dialog_cx.html#af28031ce28cca29e14826b1c57b9a631" title=" " alt="" coords="513,56,628,83"/>
-</map>

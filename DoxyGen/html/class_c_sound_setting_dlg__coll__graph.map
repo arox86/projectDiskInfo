@@ -1,9 +1,0 @@
-<map id="CSoundSettingDlg" name="CSoundSettingDlg">
-<area shape="rect" id="node1" title=" " alt="" coords="137,800,351,995"/>
-<area shape="rect" id="node2" href="$class_c_dialog_cx.html" title=" " alt="" coords="5,132,160,693"/>
-<area shape="rect" id="node3" title=" " alt="" coords="41,5,124,83"/>
-<area shape="rect" id="node4" href="$class_c_button_cx.html" title=" " alt="" coords="185,301,303,525"/>
-<area shape="rect" id="node5" title=" " alt="" coords="209,5,279,83"/>
-<area shape="rect" id="node6" href="$class_c_static_cx.html" title=" " alt="" coords="327,301,446,525"/>
-<area shape="rect" id="node7" title=" " alt="" coords="354,5,419,83"/>
-</map>
