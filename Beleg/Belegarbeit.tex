@@ -4,6 +4,9 @@
 \usepackage{graphicx}
 \usepackage{ textcomp }
 \usepackage{ tipa }
+\usepackage[center]{caption}
+
+
 \begin{document}
 \title{ {\huge Software Technik Projekt: CrystalDiskInfo} \\{\large Computer Engineering, Wintersemester 2019/2020}}
 \author{Philipp Horländer, 566045 \\Konrad Münch, 565929 \\ \\Dozent: Prof. Dr. Baar}
@@ -35,13 +38,59 @@ Wenn man möchte lassen sich auch Farbschemata der Buttons und Anzeigen ändern.
 \subsection{Programmiersprache(n)}
 
 Crystal Disk Info wurde von Noriyuki Miyazaki in der Sprache C++ für Microsoft Windows Betriebssysteme programmiert.
-Zur Darstellung der grafischen Benutzeroberfläche wurde die Microsoft Foundation Classes kurz MFC\footnote{MFC ist eine von Microsoft seit 1992 entwickelte Bibliothek zur Erstellung von Windows Desktop Anwendungen.} verwendent. Des Weiteren wurde für die Realisierung, der Darstellung der Graphen die JAVA -Bibliothek ''FLOT''  verwendet. Zudem werden noch Teile von HTML genutzt welche zur Darstellung der Graphen genutzt werden.
+Zur Darstellung der grafischen Benutzeroberfläche wurde die Microsoft Foundation Classes kurz MFC\footnote{MFC ist eine von Microsoft seit 1992 entwickelte Bibliothek zur Erstellung von Windows Desktop Anwendungen.} verwendent. Des Weiteren wurde für die Realisierung der Darstellung der Graphen, die JAVA -Bibliothek ''FLOT''  verwendet.\\ Zudem werden noch HTML Dateien genutzt welche zur Darstellung der Graphen dienen.
+Der C++ Code hat in diesem Programm jedoch mit 94,7\% den größten Anteil, diese Auswertung ergab die Diagnosefunktion von GitHub.
+\\\\
 
+
+
+\subsection{Übersicht des Quellcodes}
+
+Zum Anfang des Projekts, wurden die Analyse-Tools Sourcetrail und Doxygen von uns genutzt, um eine Übersicht von dem Umfang und Beschaffenheit des Quellcodes zu bekommen. Doxygen erwies sich als zu mächtig und umfangreich für unsere Zwecke. Die erzeugte RTF-File umfasste zwar jegliche Art von Diagrammen, jedoch war die Datei mit über 32500 Wörtern nicht praktikabel einsetzbar. \\
+\\\\
+Sourcetrail erwies sich hierbei als komfortabler und übersichtlicher. Wir konnten mit Hilfe dieses Tools einfacher den Aufbau und die Beschaffenheit der Klassen und Funktionen erfassen.\\
+
+\includegraphics [width=0.65\textwidth]{"Bilder/sourceTrail"}\\   
+
+
+
+
+Insgesamt umfasst der Code 34207 Zeilen an Code in 65 Dateien. Wie unter Punkt 2.1 schon erwähnt wurde MFC für den Aufbau des Programmes als Grundlage genutzt.\\ 
+\\\\
+Durch die Analyse mit Sourcetrail konnten wir uns einen Überblick, über die wichtigste Ursprungsklasse von der alle GUI Elemente abhängen verschaffen. Aus der Klasse CWinApp werden alle erstellten Klassen wie Dialogfenster und Fensterfunktionen abgeleitet.
+
+
+\includegraphics [width=1\textwidth]{"Bilder/cwinapp"}\\ 
+
+Aufgrund der Größe des Programms, beschränken wir uns anfänglich nur auf die Klasse CWinApp und der des Hauptdialogs CDiskInfoApp.
+Letztere ist die von dem Autor erstellte Elternklasse aus der sich alle weiteren Dialoge des GUI ableiten.
+
+
+
+
+
+
+\subsection{Ordnerstruktur}
+Das Programm erzeugt als Root-Verzeichnis den Ordner ''Marginality''. Dieser enthält die EXE-Datei und  die Ordner CdiResource sowie Smart.
+CdiResource enthält wichtige externe Dateien wie Sprachdateien, Themen, die JAVA-Skripte für den Graphen sowie das Programm AlertMail welches genutzt wird um Warnungen via E-Mail zu versenden.\\
+\\\\
+Der Ordner Smart enthält die durch Crystal Disk Info ermittelten Werte der verbauten Festplatten in dem Host-System. Diese Daten werden von dem GUI und
+der JAVA-Bibliothek FLOT genutzt, um die Werte im Frontend des Programmes darzustellen.  \\
+
+
+\includegraphics [width=0.85\textwidth]{"Bilder/all"}  \label{fig:gull} \\
+\\\\
+Ohne diesen Aufbau ist das Programm  nicht vollkommen lauffähig.\\
+Die GIT-Repository von Crystal Disk Info, enthält nicht den vollständigen Ordneraufbau. Es fehlt der Ordner CdiResource, dies 
+führt nach einem Compiler-Durchlauf zu Fehlern die durch Exceptions erzeugt werden.
+Jedoch werden diese Verzeichnisse bei der Installation mittels Setup erstellt.
 
 
 \section{Modellierung}
 
 \subsection{Use-Case-Modell}
+
+
 
 
 
@@ -142,6 +191,8 @@ Eine weitere Änderung sollte darin bestehen die Aktualisierungszeit der Datenpu
 Änderungen gab es nur an einem Use-Case.
 \subsubsection{anzeigenDiagramm}
 1. Das Programm generiert eine HTML-Datei und öffnet diese im Browser.
+
+\subsection{Neue Klasse}
 
 \subsection{Domänenmodell}
 
