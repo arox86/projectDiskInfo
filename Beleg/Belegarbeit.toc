@@ -1,27 +1,26 @@
 \babel@toc {german}{}
-\contentsline {section}{\numberline {1}Einführung}{3}%
-\contentsline {subsection}{\numberline {1.1}Aufgabenstellung}{3}%
-\contentsline {subsection}{\numberline {1.2}Beschreibung der Software}{3}%
-\contentsline {section}{\numberline {2}Aufbau des Programmes}{3}%
-\contentsline {subsection}{\numberline {2.1}Programmiersprache(n)}{3}%
-\contentsline {subsection}{\numberline {2.2}Übersicht des Quellcodes}{4}%
-\contentsline {subsection}{\numberline {2.3}Ordnerstruktur}{5}%
-\contentsline {section}{\numberline {3}Modellierung}{7}%
-\contentsline {subsection}{\numberline {3.1}Use-Case-Modell}{7}%
-\contentsline {subsubsection}{\numberline {3.1.1}anzeigenDatenträgerInformation}{7}%
-\contentsline {subsubsection}{\numberline {3.1.2}einstellenRateAktualisierung}{7}%
-\contentsline {subsubsection}{\numberline {3.1.3}anzeigenGraph}{7}%
-\contentsline {subsubsection}{\numberline {3.1.4}einstellenBenachrichtigung}{8}%
-\contentsline {subsubsection}{\numberline {3.1.5}benachrichtigenNutzer}{8}%
-\contentsline {subsubsection}{\numberline {3.1.6}auswahlTheme}{8}%
-\contentsline {subsubsection}{\numberline {3.1.7}auswahlSprache}{8}%
-\contentsline {subsection}{\numberline {3.2}Domänenmodell}{9}%
-\contentsline {section}{\numberline {4}Geforderte Änderungen}{9}%
-\contentsline {section}{\numberline {5}Modellierung nach den Änderungen}{9}%
-\contentsline {subsection}{\numberline {5.1}Use-Case-Modell}{9}%
-\contentsline {subsubsection}{\numberline {5.1.1}anzeigenDiagramm}{10}%
-\contentsline {subsection}{\numberline {5.2}Neue Klasse}{10}%
-\contentsline {subsection}{\numberline {5.3}Domänenmodell}{10}%
-\contentsline {subsection}{\numberline {5.4}Weitere Modelle}{10}%
-\contentsline {section}{\numberline {6}Beschreibung der Implementierung}{10}%
-\contentsline {section}{\numberline {7}Fazit}{10}%
+\contentsline {section}{\numberline {1}Einf\IeC {\"u}hrung}{4}% 
+\contentsline {subsection}{\numberline {1.1}Aufgabenstellung}{4}% 
+\contentsline {subsection}{\numberline {1.2}Beschreibung der Software}{4}% 
+\contentsline {section}{\numberline {2}Aufbau des Programmes}{4}% 
+\contentsline {subsection}{\numberline {2.1}Programmiersprache(n)}{4}% 
+\contentsline {subsection}{\numberline {2.2}\IeC {\"U}bersicht des Quellcodes}{5}% 
+\contentsline {subsection}{\numberline {2.3}Ordnerstruktur}{6}% 
+\contentsline {section}{\numberline {3}Modellierung}{8}% 
+\contentsline {subsection}{\numberline {3.1}Use-Case-Modell}{8}% 
+\contentsline {subsubsection}{\numberline {3.1.1}anzeigenDatentr\IeC {\"a}gerInformation}{8}% 
+\contentsline {subsubsection}{\numberline {3.1.2}einstellenRateAktualisierung}{8}% 
+\contentsline {subsubsection}{\numberline {3.1.3}anzeigenGraph}{8}% 
+\contentsline {subsubsection}{\numberline {3.1.4}einstellenBenachrichtigung}{9}% 
+\contentsline {subsubsection}{\numberline {3.1.5}benachrichtigenNutzer}{9}% 
+\contentsline {subsubsection}{\numberline {3.1.6}auswahlTheme}{9}% 
+\contentsline {subsubsection}{\numberline {3.1.7}auswahlSprache}{9}% 
+\contentsline {subsection}{\numberline {3.2}Dom\IeC {\"a}nenmodell}{10}% 
+\contentsline {section}{\numberline {4}Geforderte \IeC {\"A}nderungen}{10}% 
+\contentsline {section}{\numberline {5}Modellierung nach den \IeC {\"A}nderungen}{10}% 
+\contentsline {subsection}{\numberline {5.1}Use-Case-Modell}{10}% 
+\contentsline {subsubsection}{\numberline {5.1.1}anzeigenDiagramm}{11}% 
+\contentsline {subsection}{\numberline {5.2}Neue Klasse}{11}% 
+\contentsline {subsection}{\numberline {5.3}Dom\IeC {\"a}nenmodell}{12}% 
+\contentsline {section}{\numberline {6}Beschreibung der Implementierung}{12}% 
+\contentsline {section}{\numberline {7}Fazit}{12}% 

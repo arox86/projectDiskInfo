@@ -5,6 +5,7 @@
 \usepackage{ textcomp }
 \usepackage{ tipa }
 \usepackage[center]{caption}
+\usepackage{float}
 
 
 \begin{document}
@@ -15,13 +16,20 @@
 \newpage
 
 \tableofcontents
+\cleardoublepage
+
+\listoffigures
 \newpage
 
+
 \section{Einführung}
+
 \subsection{Aufgabenstellung}
+
 Es gilt sich eine Open Source Software auszusuchen und diese zu ''Reverse-Engineeren'' und abzuändern. Dafür sollen verschiedenen Modelle der Software angefertigt werden, wie Use-Case-, Domänen- und ggf. weitere Modelle. Das ganze soll mit einer Belegarbeit dokumentiert werden.
 
 \subsection{Beschreibung der Software}
+
 ''CrystalDiskInfo'' ist ein nützliches Open-Soruce Programm, für die Bewertung und Überwachung von internen als auch externen HDDs und SSDs. Mit Hilfe der S.M.A.R.T. - Technologie (Self-Monitoring, Analysis, Reporting Technology) werden detaillierte Daten, wie zum Beispiel Seriennummer, Temperatur, Lese- und Schreibzyklen, Fehlerrate beim Lesen und Schreiben, Speicher und Puffergrößen, als auch die gesamten Betriebsstunden der Festplatten, aus den Festplatten-Controllern ausgelesen. 
 Diese sind auf dem Controller-Chip gespeichert und werden in einem einstellbaren Intervall von der Software ausgelesen.Die entsprechenden Daten werden auf dem jeweiligen Host-System in Form von CSV-Dateien abgelegt. 
 
@@ -34,83 +42,93 @@ Eine weitere nützliche Funktion für Administratoren ist es sich bei zu hohen T
 
 Wenn man möchte lassen sich auch Farbschemata der Buttons und Anzeigen ändern.
 
+
 \section{Aufbau des Programmes}
+
 \subsection{Programmiersprache(n)}
 
 Crystal Disk Info wurde von Noriyuki Miyazaki in der Sprache C++ für Microsoft Windows Betriebssysteme programmiert.
-Zur Darstellung der grafischen Benutzeroberfläche wurde die Microsoft Foundation Classes kurz MFC\footnote{MFC ist eine von Microsoft seit 1992 entwickelte Bibliothek zur Erstellung von Windows Desktop Anwendungen.} verwendent. Des Weiteren wurde für die Realisierung der Darstellung der Graphen, die JAVA -Bibliothek ''FLOT''  verwendet.\\ Zudem werden noch HTML Dateien genutzt welche zur Darstellung der Graphen dienen.
-Der C++ Code hat in diesem Programm jedoch mit 94,7\% den größten Anteil, diese Auswertung ergab die Diagnosefunktion von GitHub.
-\\\\
+Zur Darstellung der grafischen Benutzeroberfläche wurde die Microsoft Foundation Classes kurz MFC\footnote{MFC ist eine von Microsoft seit 1992 entwickelte Bibliothek zur Erstellung von Windows Desktop Anwendungen.} verwendent. Des Weiteren wurde für die Realisierung der Darstellung der Graphen, die JAVA -Bibliothek ''FLOT''  verwendet.\\
+Zudem werden noch HTML Dateien genutzt welche zur Darstellung der Graphen dienen.
 
+Durch die Diagnosefunktion von GitHub lies sich feststellen, dass C++, mit 94,7\%, die meist verwendete Programmiersprache in Crystal Disk Info ist.
 
 
 \subsection{Übersicht des Quellcodes}
 
-Zum Anfang des Projekts, wurden die Analyse-Tools Sourcetrail und Doxygen von uns genutzt, um eine Übersicht von dem Umfang und Beschaffenheit des Quellcodes zu bekommen. Doxygen erwies sich als zu mächtig und umfangreich für unsere Zwecke. Die erzeugte RTF-File umfasste zwar jegliche Art von Diagrammen, jedoch war die Datei mit über 32500 Wörtern nicht praktikabel einsetzbar. \\
+Zum Anfang des Projekts, wurden von uns die Analyse-Tools Sourcetrail und Doxygen genutzt, um eine Übersicht vom Umfang und Beschaffenheit des Quellcodes zu bekommen. Doxygen erwies sich als zu mächtig und umfangreich für unsere Zwecke. Die erzeugte RTF-Datei umfasste zwar jegliche Art von Diagrammen, jedoch war die Datei mit über 32500 Wörtern nicht praktikabel einsetzbar. 
 \\\\
-Sourcetrail erwies sich hierbei als komfortabler und übersichtlicher. Wir konnten mit Hilfe dieses Tools einfacher den Aufbau und die Beschaffenheit der Klassen und Funktionen erfassen.\\
+Sourcetrail erwies sich hierbei als komfortabler und übersichtlicher. Wir konnten mit Hilfe dieses Tools einfacher den Aufbau und die Beschaffenheit der Klassen und Funktionen erfassen.
+\\
+\begin{figure}[H]
+	\centering
+	\includegraphics [width=0.65\textwidth]{Bilder/sourceTrail} 
+	\caption{SourceTrail Übersicht}
+	\label{fig:SourceTrailU}
+\end{figure}  
 
-\includegraphics [width=0.65\textwidth]{"Bilder/sourceTrail"}\\   
-
-
-
-
-Insgesamt umfasst der Code 34207 Zeilen an Code in 65 Dateien. Wie unter Punkt 2.1 schon erwähnt wurde MFC für den Aufbau des Programmes als Grundlage genutzt.\\ 
+Insgesamt umfasst der Code 34207 Zeilen an Code in 65 Dateien. Wie unter Punkt 2.1 schon erwähnt wurde MFC für den Aufbau des Programmes als Grundlage genutzt.
 \\\\
 Durch die Analyse mit Sourcetrail konnten wir uns einen Überblick, über die wichtigste Ursprungsklasse von der alle GUI Elemente abhängen verschaffen. Aus der Klasse CWinApp werden alle erstellten Klassen wie Dialogfenster und Fensterfunktionen abgeleitet.
-
-
-\includegraphics [width=1\textwidth]{"Bilder/cwinapp"}\\ 
-
-Aufgrund der Größe des Programms, beschränken wir uns anfänglich nur auf die Klasse CWinApp und der des Hauptdialogs CDiskInfoApp.
+\\
+Aufgrund der Größe des Programms, beschränken wir uns anfänglich nur auf die Klasse CWinApp  und der des Hauptdialogs CDiskInfoApp (siehe Abbildung \ref{fig:CWinApp}).
 Letztere ist die von dem Autor erstellte Elternklasse aus der sich alle weiteren Dialoge des GUI ableiten.
 
-
-
-
-
+\begin{figure}[H]
+	\centering
+	\includegraphics [width=1\textwidth]{Bilder/cwinapp}
+	\caption{SourceTrail Übersicht von CWinApp und CDiskInfoApp}
+	\label{fig:CWinApp}
+\end{figure}  
 
 \subsection{Ordnerstruktur}
-Das Programm erzeugt als Root-Verzeichnis den Ordner ''Marginality''. Dieser enthält die EXE-Datei und  die Ordner CdiResource sowie Smart.
-CdiResource enthält wichtige externe Dateien wie Sprachdateien, Themen, die JAVA-Skripte für den Graphen sowie das Programm AlertMail welches genutzt wird um Warnungen via E-Mail zu versenden.\\
-\\\\
-Der Ordner Smart enthält die durch Crystal Disk Info ermittelten Werte der verbauten Festplatten in dem Host-System. Diese Daten werden von dem GUI und
-der JAVA-Bibliothek FLOT genutzt, um die Werte im Frontend des Programmes darzustellen.  \\
 
-
-\includegraphics [width=0.85\textwidth]{"Bilder/all"}  \label{fig:gull} \\
+Das Programm erzeugt als Root-Verzeichnis den Ordner ''Marginality''. Dieser enthält die EXE-Datei und  die Ordner CdiResource sowie Smart. Zu sehen in Abbildung \ref{fig:Dir}. 
+\\
+CdiResource enthält wichtige externe Dateien, wie Sprachdateien, Themen, die JavaScript-Dateien für den Graphen sowie das Programm AlertMail welches genutzt wird um Warnungen via E-Mail zu versenden.
 \\\\
-Ohne diesen Aufbau ist das Programm  nicht vollkommen lauffähig.\\
-Die GIT-Repository von Crystal Disk Info, enthält nicht den vollständigen Ordneraufbau. Es fehlt der Ordner CdiResource, dies 
-führt nach einem Compiler-Durchlauf zu Fehlern die durch Exceptions erzeugt werden.
-Jedoch werden diese Verzeichnisse bei der Installation mittels Setup erstellt.
+Der Ordner Smart enthält die durch Crystal Disk Info ermittelten Werte der verbauten Festplatten im Host-System. Diese Daten werden vom GUI und der JavaScript-Bibliothek FLOT genutzt, um die Werte im Frontend des Programmes darzustellen. 
+\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics [width=0.85\textwidth]{Bilder/all}
+	\caption{Ordner Struktur im Programm (nicht Source-Code)}
+	\label{fig:Dir}
+\end{figure}  
+
+Ohne diesen Aufbau ist das Programm  nicht lauffähig.\\
+Das GIT-Repository von Crystal Disk Info enthält nicht den vollständigen Ordneraufbau. Es fehlt der Ordner CdiResource, dies führt nach einem Compiler-Durchlauf zu Laufzeitfehlern.
+Bei der Installation mittels Setup Wizard werden alle nötigen Verzeichnisse erstellt.
 
 
 \section{Modellierung}
 
 \subsection{Use-Case-Modell}
 
-
-
-
-
-\includegraphics [width=1\textwidth]{"Bilder/UseCase1"}  \label{fig:gull}
-
-
-
+\begin{figure}[H]
+	\centering
+	\includegraphics [width=1\textwidth]{Bilder/UseCase1}
+	\caption{Use-Case-Modell}
+	\label{fig:UseCase1}
+\end{figure}  
 
 
 \subsubsection{anzeigenDatenträgerInformation}
+
 1. Das Programm ermittelt die verbauten Festplatten.\\
 2. Das Programm liest SMART-Daten jedes Festplatten-Controllers aus.\\ 
-3. Das Programm zeigt die ermittelten Werte im GUI  an. \\ 
+3. Das Programm zeigt die ermittelten Werte im GUI  an.  
+
 
 \subsubsection{einstellenRateAktualisierung}
+
 1. Der Nutzer wählt ein Zeitintervall\\
-2. Das Programm liest und speichert die Werte im gewählten Intervall.\\
+2. Das Programm liest und speichert die Werte im gewählten Intervall.
 
 
 \subsubsection{anzeigenGraph}
+
 1. Der Nutzer wählt die Funktion Graph anzeigen.\\
 2. Das Programm öffnet ein neues Fenster.\\
 3. Das Programm zeigt einen Graph mit aus Datenreihen an.
@@ -119,23 +137,27 @@ Jedoch werden diese Verzeichnisse bei der Installation mittels Setup erstellt.
 2a.1. Das Programm zeigt die andere Datenreihe an.
 \\\\
 2b. Der Nutzer wählt Festplatten an/ab.\\
-2b.1. Das Programm zeigt die gewählten Festplatten-Datenreihen an.\\
+2b.1. Das Programm zeigt die gewählten Festplatten-Datenreihen an.
+
 
 \subsubsection{einstellenBenachrichtigung}
+
 1. Der Nutzer wählt einstellen einer Benachrichtigung aus.\\
 2. Das Programm wartet Eingabe der benötigten Daten des Benutzers.\\
 3. Der Nutzer gibt nötigen Daten ein und bestätigt.
 
 
-
 \subsubsection{benachrichtigenNutzer}
+
 1. Das Programm stellt einen kritischen Wert von Temperatur oder Lebensdauer einer Festplatte fest.\\
 2. Das Programm erstellt eine E-Mail und versendet diese an die eingestellte Adresse.
 \\\\
 2a Der Nutzer schließt das Fenster.\\
 2a.1 Das Use-Case endet erfolglos.
 
+
 \subsubsection{auswahlTheme}
+
 1. Der Nutzer wählt Theme ändern aus.\\
 2. Das Programm zeigt dem Nutzer eine Auswahl an.\\
 3. Der Nutzer wählt zwischen Verschiedenen Farbdarstellungen.\\
@@ -150,6 +172,7 @@ Jedoch werden diese Verzeichnisse bei der Installation mittels Setup erstellt.
 
 
 \subsubsection{auswahlSprache}
+
 1. Der Nutzer wählt Sprache ändern aus.\\
 2. Das Programm zeigt dem Nutzer eine Auswahl an.\\
 3. Der Nutzer wählt zwischen Verschiedenen Sprachen.\\
@@ -162,56 +185,95 @@ Jedoch werden diese Verzeichnisse bei der Installation mittels Setup erstellt.
 4\textdoublevertline a.1. Das Programm zeigt eine Fehlermeldung an.\\
 4\textdoublevertline a.2. Das Use-Case endet erfolglos an.
 
+
 \subsection{Domänenmodell}
-Das hier gezeigte Domänenmodell stellt die Funktion vor der Änderung des Programmes da. Zur Übersicht wurde nur ein Ausschnitt des gesamten Programmes betrachtet.\\
 
+Das in Abbildung \ref{fig:DomMod0} gezeigte Domänenmodell stellt die Funktion vor der Änderung des Programmes da. Zur Übersicht wurde nur der Ausschnitt des gesamten Programmes betrachtet, der für die spätere Änderung relevant ist.\\
 
-
-\includegraphics [width=1.1\textwidth]{"Bilder/DomaenenModell_0"}  \label{fig:gull}
-
-
-
+\begin{figure}[H]
+	\centering
+	\includegraphics [width=1.1\textwidth]{Bilder/DomaenenModell_0}	
+	\caption{Domänenmodell: Funktionsweise}
+	\label{fig:DomMod0}
+\end{figure}
 
 
 \section{Geforderte Änderungen}
-Die Änderung von CrystalDiskInfo sollte die Darstellung eines neuen Diagrammtyps ermöglichen. Das sogenannte ''Bubble Diagramm'' sollte in die Auswahlfunktion der Diagramme implentiert werden.\\
-Ein ''Bubble Diagramm'' soll die Korrellation von zwei Datenreihen darstellen, in Form von Punkten auf einem Koordinatensystem.
-Diese werden durch eine dritte Abhängigkeit ergänzt welche durch die Größe der Punkte (Radius) dargestellt wird. \\\\
 
-Ein besprochene Umsetzungsidee war die Darstellung von Temperatur auf der X-Achse, zu geschriebenen Daten auf der Y-Achse, welche nach einer Zeitperiode ihre Größe verändern. Zudem sollten noch andere Daten mit einander verglichen werden.\\
+Die Änderung von CrystalDiskInfo sollte die Darstellung eines neuen Diagrammtyps ermöglichen. Das sogenannte ''Bubble Diagramm'' sollte in die Auswahlfunktion der Diagramme implementiert werden.
+\\
+Ein ''Bubble Diagramm'' soll die Korrelation von zwei Datenreihen darstellen, in Form von Punkten auf einem Koordinatensystem.
+Diese werden durch eine dritte Abhängigkeit ergänzt welche durch die Größe der Punkte (Radius) dargestellt wird.
+\\\\
+Ein besprochene Umsetzungsidee war die Darstellung von Temperatur auf der X-Achse, zu geschriebenen Daten auf der Y-Achse, welche nach einer Zeitperiode ihre Größe verändern. Zudem sollten noch andere Daten mit einander verglichen werden.
+\\
 Nach Absprache mit dem Dozenten Herrn Prof. Dr. Baar, wurde die Art der Implementierung vereinfacht. Grund hierfür war die Komplexität des Aufbaus der Darstellungsfunktion im Programm. 
+\\
 Eine weitere Änderung sollte darin bestehen die Aktualisierungszeit der Datenpunkte auf eine Sekunde hinzuzufügen.
  
- 
-
 
 \section{Modellierung nach den Änderungen}
 
 \subsection{Use-Case-Modell}
+
 Änderungen gab es nur an einem Use-Case.
+
+
 \subsubsection{anzeigenDiagramm}
+
 1. Das Programm generiert eine HTML-Datei und öffnet diese im Browser.
 
 \subsection{Neue Klasse}
 
+Um das Bubble-Diagramm zu erzeugen wurde eine neue Klasse ''BubblePlotHandler'' (Abbildung \ref{fig:BPH}) angelegt. Die Klasse besitzt eine public Methode makeHTML(), eine private Methode getDataFromFile(path) und keine Eigenschaften.
+\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Bilder/BubblePlotHandler}
+	\caption{BubblePlotHandler.h}
+	\label{fig:BPH}
+\end{figure}
+
+Wird makeHTML() aufgerufen, werden Daten aus CSV-Dateien ausgelesen (siehe Abbildung \ref{fig:CSVEx}). Wir konnten nicht herausfinden wie der Pfad zu den Festplattendaten auszulesen ist, deshalb liest die Klasse Beispieldaten aus die im selben Ordner liegen (Smart/testData).\footnote{Die Daten liegen als ZIP-Archiv (testData.zip) bei und müssen Manuell eingefügt werden, da Crystal Disk Info den Smart Ordner frei räumt, wenn es auf einer neuen Maschine gestartet wird.}
+\\
+
+
+\begin{figure}[H]
+	\centering
+	%\includegraphics[width=1.0\textwidth]{Bilder/DataExample}
+	\caption{Beispiel für Datenreihe in CSV-Datei}
+	\label{fig:CSVEx}
+\end{figure}
+
 \subsection{Domänenmodell}
 
-\subsection{Weitere Modelle}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.3\textwidth]{Bilder/Domaenenmodell_1}
+	\caption{Domänenmodell: Funktionsweise nach der Änderung}
+	\label{fig:Dom2}
+\end{figure}  
 
 
 \section{Beschreibung der Implementierung}
+
 Um das Bubble-Chart darzustellen wurde, wie im Originalprogramm eine JavaScript Bibliothek genutzt. Es wurde sich allerdings für eine andere, modernere Bibliothek entschieden, da die in CrystalDiskInfo verwendete schon sehr alt war und der Anforderungen ein Bubble-Chart darzustellen nicht erfüllen konnte. Deshalb wurde die JavaScript Bibliothek ChartsBundle.js  verwendet, welche auch OpenSource auf GitHub.com zur Verfügung steht.
 
 Mithilfe dieser Bibliothek wurde dann eine HTML mit JavaScript erstellt. Um die Verarbeitung in C++ zu vereinfachen wurde das Skript in zwei Teile geteilt und in Text-Dateien abgelegt. Diese Dateien wurden dann in C++ mit den ausgelesen Daten zu einer fertigen HMTL/JS-Datei verknüpft und gespeichert. Die erstellte HTML Datei wird nun über einen 
 Aufruf im Browser geöffnet.
 
+
 \section{Fazit}
-Schwierigkeiten traten im gesamten Verlauf zur genüge an. Zuerst war es recht schwer herauszufinden wie CrystalDiskInfo aus dem Source Code funktionsfähig zu bekommen ist. Nötig waren dafür Dateien von der fertigen Installation die dem Source Code nicht beilagen und auch nicht beim Compilieren erstellt wurden. \\
-Als nächstes war es sehr schwer den Code zu verstehen, da es sich bei dem Entwickler von CrystalDiskInfo offensichtlich um einen sehr erfahrenen Programmierer handelt und das Programm entsprechend komplex war. Allerdings ist CrystalDiskInfo sehr spärlich kommentiert. Das machte das verstehen deutlich schwerer. \\
-Die geforderte Änderung umzusetzen erwies sich als schwerer als erwartet. 
 
-
-
-
+Schwierigkeiten traten im gesamten Verlauf zur genüge an. Zuerst war es recht schwer herauszufinden wie CrystalDiskInfo aus dem Source Code funktionsfähig zu bekommen ist. Nötig waren dafür Dateien von der fertigen Installation die dem Source Code nicht beilagen und auch nicht beim Compilieren erstellt wurden.
+\\
+Als nächstes war es sehr schwer den Code zu verstehen, da es sich bei dem Entwickler von CrystalDiskInfo offensichtlich um einen sehr erfahrenen Programmierer handelt und das Programm entsprechend komplex war. Allerdings ist CrystalDiskInfo sehr spärlich kommentiert. Das machte das verstehen deutlich schwerer. 
+\\
+Die geforderte Änderung umzusetzen erwies sich als schwerer als erwartet. Wir versuchten erst zu verstehen wie Miyazaki den Graph erstellt und stießen dabei auf eine JavaScript Bibliothek. Allerdings war diese nicht zu dem in der Lage was wir benötigten. Wir suchten uns dann einige Bibliotheken für C++ heraus, konnten aber keine verwenden, da etwaige andere Abhängigkeiten zu weiteren Bibliotheken bestand. Beispielsweise zu QT (einer konkurrierenden GUI-Bibliothek zu MFC) oder zu Python. 
+\\
+Letztendlich wurde es eine kleine JavaScript Bibliothek. Nur fanden wir dann heraus, dass MFC keine Möglichkeit hat JavaScript in HTML zu verarbeiten. Also bauten wir intern eine HTML und riefen sie im Standardbrowser auf.
+\\\\
+Durch die vielen Probleme haben wir gelernt auf wie viele Details man beim Softwaredesign achten muss und warum eine gute Planung dafür wichtig ist. Außerdem haben wir gelernt, dass selbst die simpelsten klingenden Aufgaben sich als viel schwerer herausstellen können.
 
 \end{document}

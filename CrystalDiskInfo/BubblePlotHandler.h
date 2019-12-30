@@ -9,4 +9,3 @@ public:
 private:
 	std::vector<std::string>* getDataFromFile(std::string path);
 };
-
