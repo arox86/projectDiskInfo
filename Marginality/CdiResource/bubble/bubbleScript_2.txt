@@ -22,7 +22,7 @@
                         yAxes: [{
                             scaleLabel: {
                                 display: true,
-                                labelString: 'Host Writes'
+                                labelString: 'Host Writes in GB'
                             },
                             id: 'left',
                             type: 'linear',
