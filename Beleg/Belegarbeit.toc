@@ -1,7 +1,7 @@
 \babel@toc {german}{}
 \contentsline {section}{\numberline {1}Einf\IeC {\"u}hrung}{4}
 \contentsline {subsection}{\numberline {1.1}Aufgabenstellung}{4}
-\contentsline {subsection}{\numberline {1.2}Visionen und Zeile des Originalprojektes}{4}
+\contentsline {subsection}{\numberline {1.2}Visionen und Ziele des Originalprojektes}{4}
 \contentsline {subsection}{\numberline {1.3}Beschreibung der Software}{4}
 \contentsline {subsection}{\numberline {1.4}Programm vor \IeC {\"A}nderung}{5}
 \contentsline {section}{\numberline {2}Aufbau des Programmes}{6}
@@ -19,11 +19,13 @@
 \contentsline {subsubsection}{\numberline {3.1.7}auswahlSprache}{11}
 \contentsline {subsection}{\numberline {3.2}Dom\IeC {\"a}nenmodell}{12}
 \contentsline {section}{\numberline {4}Geforderte \IeC {\"A}nderungen}{12}
+\contentsline {subsection}{\numberline {4.1}Visionen und Ziele der \IeC {\"A}nderung}{12}
 \contentsline {section}{\numberline {5}Modellierung nach den \IeC {\"A}nderungen}{13}
 \contentsline {subsection}{\numberline {5.1}Use-Case-Modell}{13}
 \contentsline {subsubsection}{\numberline {5.1.1}anzeigenDiagramm}{13}
+\contentsline {subsubsection}{\numberline {5.1.2}einstellenRateAktualisierung}{13}
 \contentsline {subsection}{\numberline {5.2}Neue Klasse}{13}
-\contentsline {subsection}{\numberline {5.3}Dom\IeC {\"a}nenmodell}{14}
+\contentsline {subsection}{\numberline {5.3}Dom\IeC {\"a}nenmodell}{15}
 \contentsline {section}{\numberline {6}Beschreibung der Implementierung}{15}
 \contentsline {section}{\numberline {7}Programm nach \IeC {\"A}nderung}{15}
 \contentsline {section}{\numberline {8}Fazit}{17}

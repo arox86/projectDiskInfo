@@ -33,12 +33,15 @@ Beschreibung vorgestellt. Ein weiterer Bestandteil des Moduls ist es, den prakti
 
 Es galt sich eine Open Source Software auszusuchen und diese zu ''Reverse-Engineeren'' und abzuändern. Dafür sollten verschiedenen Modelle der Software angefertigt werden. Beispiele dafür sind Use-Case-, Domänen- und ggf. weitere Modelle, dies sollte mit einer Belegarbeit dokumentiert werden.\\\\
 
-\subsection{Visionen und Zeile des Originalprojektes}
+\subsection{Visionen und Ziele des Originalprojektes}
 \begin{itemize}
 \item \textbf{/VO1/} Crystal Disk Info soll für Microsoft Betriebsysteme ab Windows XP verfügbar sein.
-\item \textbf{ZO2/} Crystal Disk Info soll die S.M.A.R.T. Technologie nutzen um die Festplattendaten kompatibler Laufwerke über eine bestimmte Zeitperiode auslesen zu können .
+\item \textbf{/ZO2/} Crystal Disk Info soll die S.M.A.R.T. Technologie nutzen um die Festplattendaten kompatibler Laufwerke über eine bestimmte Zeitperiode auslesen zu können .
 \item \textbf {/ZO3/} Crystal Disk Info soll über den Gesamtzustand der Festplatte informieren und 
 bei niedrieger Lebenserwartung des Laufwerkes warnen.
+
+\item \textbf {/ZO4/} Crystal Disk Info soll Diagramme darstellen können um die Verläufe der Werte
+von \textbf {/ZO3/} grafisch darstellen zu können.
 
 \end{itemize}
 
@@ -144,28 +147,28 @@ Des Weiteren wird mit dem Domänenmodell eine Übersicht der Klassen und Funktio
 \subsubsection{anzeigenDatenträgerInformation}
 
 1. Das Programm ermittelt die verbauten Festplatten.\\
-2. Das Programm liest SMART-Daten jedes Festplatten-Controllers aus.\\ 
+2. Das Programm liest SMART-Daten jedes Festplatten-Controllers aus (\textbf{/ZO2/}).\\ 
 3. Das Programm zeigt die ermittelten Werte im GUI  an.  
 
 
 \subsubsection{einstellenRateAktualisierung}
 
 1. Der Nutzer wählt ein Zeitintervall\\
-2. Das Programm liest und speichert die Werte im gewählten Intervall.
+2. Das Programm liest und speichert die Werte im gewählten Intervall (\textbf{/ZO2/}).
 
 
 \subsubsection{anzeigenGraph}
 
 1. Der Nutzer wählt die Funktion Graph anzeigen.\\
 2. Das Programm öffnet ein neues Fenster.\\
-3. Der Nutzer wählt eine Datenreihe zur Anzeige aus.
-4. Das Programm zeigt einen Graph mit gewählten Datenreihen an.
+3. Der Nutzer wählt eine Datenreihe zur Anzeige aus.\\
+4. Das Programm zeigt einen Graph mit gewählten Datenreihen an (\textbf{/ZO4/}).
 \\\\
 2a. Der Nutzer wählt eine andere Datenreihe aus.\\
-2a.1. Das Programm zeigt die andere Datenreihe an.
+2a.1. Das Programm zeigt die andere Datenreihe an (\textbf{/ZO4/}).
 \\\\
 2b. Der Nutzer wählt Festplatten an/ab.\\
-2b.1. Das Programm zeigt die gewählten Festplatten-Datenreihen an.
+2b.1. Das Programm zeigt die gewählten Festplatten-Datenreihen an (\textbf{/ZO4/}).
 
 
 \subsubsection{einstellenBenachrichtigung}
@@ -177,7 +180,8 @@ Des Weiteren wird mit dem Domänenmodell eine Übersicht der Klassen und Funktio
 
 \subsubsection{benachrichtigenNutzer}
 
-1. Das Programm stellt einen kritischen Wert von Temperatur oder Lebensdauer einer Festplatte fest.\\
+1. Das Programm stellt einen kritischen Wert von Temperatur oder Lebensdauer einer Festplatte fest (\textbf{/ZO3/}).
+\\
 2. Das Programm erstellt eine E-Mail und versendet diese an die eingestellte Adresse.
 \\\\
 2a Der Nutzer schließt das Fenster.\\
@@ -220,7 +224,7 @@ Das in Abbildung \ref{fig:DomMod0} gezeigte Domänenmodell stellt die Funktion v
 
 \begin{figure}[H]
 	\centering
-	\includegraphics [width=1.1\textwidth]{Bilder/DomaenenModell_1}	
+	\includegraphics [width=1.1\textwidth]{Bilder/DomaenenModell_0}	
 	\caption{Domänenmodell: Funktionsweise}
 	\label{fig:DomMod0}
 \end{figure}
@@ -228,7 +232,18 @@ Das in Abbildung \ref{fig:DomMod0} gezeigte Domänenmodell stellt die Funktion v
 
 \section{Geforderte Änderungen}
 
-Die Änderung von Crystal Disk Info sollte die Darstellung eines neuen Diagrammtyps ermöglichen. Das sogenannte ''Bubble Diagramm'' sollte in die Auswahlfunktion der Diagramme implementiert werden.
+\subsection{Visionen und Ziele der Änderung}
+\begin{itemize}
+\item \textbf{/ZÄ1/} Crystal Disk Info soll über einen neuen Diagrammtyp verfügen, welcher 
+drei Parameter auf einem zweidimensionalen Graphen abbilden kann.
+
+\item \textbf {/ZÄ2/} Crystal Disk Info soll sekündlich die Aktualisierung der ausgelesenen
+Werte ermöglichen.
+\\\\
+
+
+\end{itemize}
+Die Änderung von Crystal Disk Info sollte die Darstellung eines neuen Diagrammtyps (\textbf{/ZÄ1/}) ermöglichen. Das sogenannte ''Bubble Diagramm'' sollte in die Auswahlfunktion der Diagramme implementiert werden.
 \\
 Ein ''Bubble Diagramm'' soll die Korrelation von zwei Datenreihen darstellen, in Form von Punkten auf einem Koordinatensystem.
 Diese werden durch eine dritte Abhängigkeit ergänzt welche durch die Größe der Punkte (Radius) dargestellt wird.
@@ -237,19 +252,23 @@ Ein besprochene Umsetzungsidee war die Darstellung von Temperatur auf der X-Achs
 \\\\
 Nach Absprache mit dem Dozenten Herrn Prof. Dr. Baar wurde die Art der Implementierung vereinfacht. Grund hierfür war die Komplexität des Aufbaus der Darstellungsfunktion im Programm. 
 \\
-Eine weitere Änderung sollte darin bestehen, die Aktualisierungszeit der Datenpunkte auf eine Sekunde hinzuzufügen.
+Eine weitere Änderung sollte darin bestehen, die Aktualisierungszeit (\textbf{/ZÄ2/}) der Datenpunkte auf eine Sekunde hinzuzufügen.
 \\\\
 
 \section{Modellierung nach den Änderungen}
 
 \subsection{Use-Case-Modell}
 
-Änderungen gab es nur an einem Use-Case.
+Änderungen gab es an zwei Use-Cases.
 
 
 \subsubsection{anzeigenDiagramm}
 
-1. Das Programm generiert eine HTML-Datei und öffnet diese im Browser.
+ Das Programm generiert eine HTML-Datei und öffnet diese im Browser (\textbf{/ZÄ1/}).
+
+\subsubsection{einstellenRateAktualisierung}
+
+ Das Programm hat Funktion die Aktualisierung der Laufwerkswerte sekündlich durchzuführen (\textbf{/ZÄ2/}).
 
 \subsection{Neue Klasse}
 
