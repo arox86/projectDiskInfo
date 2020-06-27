@@ -1,28 +1,29 @@
 \babel@toc {german}{}
 \contentsline {section}{\numberline {1}Einf\IeC {\"u}hrung}{4}
 \contentsline {subsection}{\numberline {1.1}Aufgabenstellung}{4}
-\contentsline {subsection}{\numberline {1.2}Beschreibung der Software}{4}
-\contentsline {subsection}{\numberline {1.3}Programm vor \IeC {\"A}nderung}{5}
-\contentsline {section}{\numberline {2}Aufbau des Programmes}{5}
+\contentsline {subsection}{\numberline {1.2}Visionen und Zeile des Originalprojektes}{4}
+\contentsline {subsection}{\numberline {1.3}Beschreibung der Software}{4}
+\contentsline {subsection}{\numberline {1.4}Programm vor \IeC {\"A}nderung}{5}
+\contentsline {section}{\numberline {2}Aufbau des Programmes}{6}
 \contentsline {subsection}{\numberline {2.1}Programmiersprache(n)}{6}
 \contentsline {subsection}{\numberline {2.2}\IeC {\"U}bersicht des Quellcodes}{6}
-\contentsline {subsection}{\numberline {2.3}Ordnerstruktur}{7}
-\contentsline {section}{\numberline {3}Modellierung}{8}
-\contentsline {subsection}{\numberline {3.1}Use-Case-Modell}{9}
-\contentsline {subsubsection}{\numberline {3.1.1}anzeigenDatentr\IeC {\"a}gerInformation}{9}
-\contentsline {subsubsection}{\numberline {3.1.2}einstellenRateAktualisierung}{9}
-\contentsline {subsubsection}{\numberline {3.1.3}anzeigenGraph}{9}
-\contentsline {subsubsection}{\numberline {3.1.4}einstellenBenachrichtigung}{10}
-\contentsline {subsubsection}{\numberline {3.1.5}benachrichtigenNutzer}{10}
-\contentsline {subsubsection}{\numberline {3.1.6}auswahlTheme}{10}
-\contentsline {subsubsection}{\numberline {3.1.7}auswahlSprache}{10}
-\contentsline {subsection}{\numberline {3.2}Dom\IeC {\"a}nenmodell}{11}
-\contentsline {section}{\numberline {4}Geforderte \IeC {\"A}nderungen}{11}
-\contentsline {section}{\numberline {5}Modellierung nach den \IeC {\"A}nderungen}{12}
-\contentsline {subsection}{\numberline {5.1}Use-Case-Modell}{12}
-\contentsline {subsubsection}{\numberline {5.1.1}anzeigenDiagramm}{12}
-\contentsline {subsection}{\numberline {5.2}Neue Klasse}{12}
-\contentsline {subsection}{\numberline {5.3}Dom\IeC {\"a}nenmodell}{13}
-\contentsline {section}{\numberline {6}Beschreibung der Implementierung}{14}
-\contentsline {section}{\numberline {7}Programm nach \IeC {\"A}nderung}{14}
-\contentsline {section}{\numberline {8}Fazit}{16}
+\contentsline {subsection}{\numberline {2.3}Ordnerstruktur}{8}
+\contentsline {section}{\numberline {3}Modellierung}{9}
+\contentsline {subsection}{\numberline {3.1}Use-Case-Modell}{10}
+\contentsline {subsubsection}{\numberline {3.1.1}anzeigenDatentr\IeC {\"a}gerInformation}{10}
+\contentsline {subsubsection}{\numberline {3.1.2}einstellenRateAktualisierung}{10}
+\contentsline {subsubsection}{\numberline {3.1.3}anzeigenGraph}{10}
+\contentsline {subsubsection}{\numberline {3.1.4}einstellenBenachrichtigung}{11}
+\contentsline {subsubsection}{\numberline {3.1.5}benachrichtigenNutzer}{11}
+\contentsline {subsubsection}{\numberline {3.1.6}auswahlTheme}{11}
+\contentsline {subsubsection}{\numberline {3.1.7}auswahlSprache}{11}
+\contentsline {subsection}{\numberline {3.2}Dom\IeC {\"a}nenmodell}{12}
+\contentsline {section}{\numberline {4}Geforderte \IeC {\"A}nderungen}{12}
+\contentsline {section}{\numberline {5}Modellierung nach den \IeC {\"A}nderungen}{13}
+\contentsline {subsection}{\numberline {5.1}Use-Case-Modell}{13}
+\contentsline {subsubsection}{\numberline {5.1.1}anzeigenDiagramm}{13}
+\contentsline {subsection}{\numberline {5.2}Neue Klasse}{13}
+\contentsline {subsection}{\numberline {5.3}Dom\IeC {\"a}nenmodell}{14}
+\contentsline {section}{\numberline {6}Beschreibung der Implementierung}{15}
+\contentsline {section}{\numberline {7}Programm nach \IeC {\"A}nderung}{15}
+\contentsline {section}{\numberline {8}Fazit}{17}
