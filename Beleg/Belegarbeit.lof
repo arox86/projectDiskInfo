@@ -1,12 +1,12 @@
 \babel@toc {german}{}
-\contentsline {figure}{\numberline {1}{\ignorespaces Screenshot Crystal Disk Info\relax }}{5}
-\contentsline {figure}{\numberline {2}{\ignorespaces SourceTrail \IeC {\"U}bersicht\relax }}{7}
-\contentsline {figure}{\numberline {3}{\ignorespaces SourceTrail \IeC {\"U}bersicht von CWinApp und CDiskInfoApp\relax }}{8}
-\contentsline {figure}{\numberline {4}{\ignorespaces Ordner Struktur im Programm (nicht Source-Code)\relax }}{9}
-\contentsline {figure}{\numberline {5}{\ignorespaces Use-Case-Modell\relax }}{10}
-\contentsline {figure}{\numberline {6}{\ignorespaces Dom\IeC {\"a}nenmodell: Funktionsweise\relax }}{12}
-\contentsline {figure}{\numberline {7}{\ignorespaces BubblePlotHandler.h\relax }}{13}
-\contentsline {figure}{\numberline {8}{\ignorespaces Beispiel f\IeC {\"u}r Datenreihe in CSV-Datei\relax }}{14}
-\contentsline {figure}{\numberline {9}{\ignorespaces Dom\IeC {\"a}nenmodell: Funktionsweise nach der \IeC {\"A}nderung\relax }}{15}
-\contentsline {figure}{\numberline {10}{\ignorespaces Screenshot Crystal Disk Info nach \IeC {\"A}nderung\relax }}{16}
-\contentsline {figure}{\numberline {11}{\ignorespaces Neuer Diagrammtyp "Bubble Diagramm"\relax }}{16}
+\contentsline {figure}{\numberline {1}{\ignorespaces Crystal Disk Info\relax }}{6}{figure.caption.3}
+\contentsline {figure}{\numberline {2}{\ignorespaces Sourcetrail \IeC {\"U}bersicht\relax }}{7}{figure.caption.4}
+\contentsline {figure}{\numberline {3}{\ignorespaces Sourcetrail \IeC {\"U}bersicht von CWinApp und CDiskInfoApp\relax }}{8}{figure.caption.5}
+\contentsline {figure}{\numberline {4}{\ignorespaces Ordner Struktur im Programm (nicht Source-Code)\relax }}{9}{figure.caption.6}
+\contentsline {figure}{\numberline {5}{\ignorespaces Use-Case-Modell\relax }}{10}{figure.caption.7}
+\contentsline {figure}{\numberline {6}{\ignorespaces Dom\IeC {\"a}nenmodell: Funktionsweise\relax }}{12}{figure.caption.8}
+\contentsline {figure}{\numberline {7}{\ignorespaces BubblePlotHandler.h\relax }}{14}{figure.caption.9}
+\contentsline {figure}{\numberline {8}{\ignorespaces Beispiel f\IeC {\"u}r Datenreihe in CSV-Datei\relax }}{14}{figure.caption.10}
+\contentsline {figure}{\numberline {9}{\ignorespaces Dom\IeC {\"a}nenmodell: Funktionsweise nach der \IeC {\"A}nderung\relax }}{15}{figure.caption.11}
+\contentsline {figure}{\numberline {10}{\ignorespaces Screenshot Crystal Disk Info nach \IeC {\"A}nderung\relax }}{16}{figure.caption.12}
+\contentsline {figure}{\numberline {11}{\ignorespaces Neuer Diagrammtyp Bubble Diagramm \relax }}{17}{figure.caption.13}
